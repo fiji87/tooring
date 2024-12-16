@@ -1,0 +1,66 @@
+/***********************************************/
+/* Badges **************************************/
+/***********************************************/
+/* badge position */
+.post-badges {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.pagination .post-badges {
+    bottom: 0.2em;
+}
+
+/* badge even padding */
+div.articles ul.post-list span.post-badges span.post-badge {
+    padding: 0px 9px;
+}
+
+/* badge pinned */
+div.articles ul.post-list span.post-badges span.post-badge.badge-top {
+    display: none;
+}
+
+/* badge new */
+div.articles ul.post-list span.post-badges span.post-badge.badge-new {
+    background-color: var(--latte_green);
+    color: var(--black);
+}
+
+
+/***********************************************/
+/* Tags ****************************************/
+/***********************************************/
+/* tags in the post list only (not within posts) */
+.post-list .post-tag {
+    color: var(--overlay0);
+    border-color: var(--overlay0) !important;
+}
+
+.post-list .post-tag:hover {
+    color: var(--base) !important;
+    border-color: var(--latte_lavander) !important;
+    background-color: var(--latte_lavander);
+}
+
+/***********************************************/
+/* Taglist *************************************/
+/***********************************************/
+section.sidebar .common-list > ul li a:hover {
+    background-color: var(--frappe_green);
+}
+
+section.main div.page-segments ul.page-segments-list li a.post-link:hover {
+    text-decoration: none;
+    color: var(--latte_lavander);
+}
+
+/* tags in the post header */
+header.post-header .post-tags a.post-tag:hover {
+    text-decoration: none !important;
+}
+
+/* hide badges in tag list */
+section.main div.page-segments span.post-badges {
+    display: none;
+}

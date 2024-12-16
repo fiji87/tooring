@@ -1,0 +1,8 @@
+ul.post-list a.post-link:hover {
+    color: var(--latte_lavander);
+}
+
+/* no underline on post text hover */
+ul.post-list a.post-text {
+    text-decoration: none !important;
+}

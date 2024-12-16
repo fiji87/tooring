@@ -109,16 +109,8 @@ a {
   color: $brand-color;
   text-decoration: none;
 
-  &:hover {
-    text-decoration: underline;
-  }
-
   .social-media-list &:hover {
     text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
   }
 }
 

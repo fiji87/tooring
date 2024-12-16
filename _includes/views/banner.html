@@ -129,3 +129,50 @@
   </section>
 {%- endif -%}
 
+<!-- info bar -->
+<div class="topbar ui attached stackable menu">
+  <div class="ui container">
+    <div class="left item _780moreviewport">
+      <img class="ui tiny centered image" id="unipilogo" src="https://cdn.jsdelivr.net/gh/msetzu/marpee@latest/assets/imgs/logos/unipi/SVG/cherubino_only.svg">
+      <p>Università di Pisa</p>
+    </div>
+
+    <a class="right item" href="{{ site.baseurl }}/" id="home">
+      <i class="home icon"></i> Home
+    </a>
+    <a class="right item" href="{{ site.baseurl }}/machine" id="machinebutton">
+      <i class="fa-regular fa-microchip icon"></i> La Macchina
+    </a>
+    <a class="right item _780lessviewport" href="cup#registration">
+      <i class="fa-regular fa-pen-to-square icon"></i> Registrazione
+    </a>
+    
+    <!-- only show in vertical menu on small viewports -->
+    <a class="item _780lessviewport" href="cup#rules">
+      <i class="fa fa-file icon"></i> Regolamento
+    </a>
+    <a class="item _780lessviewport" href="cup#past-editions">
+      <i class="fa-clock-rotate-left icon"></i> Edizioni precedenti
+    </a>
+    
+    <div class="ui simple dropdown right item _780moreviewport" id="cupbutton">
+      <i class="fa-solid fa-trophy"></i>
+      The Cup
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a class="item _780moreviewport" href="cup">
+          <i class="fa-solid fa-trophy"></i> La competizione
+        </a>
+        <a class="item _780moreviewport" href="cup#rules">
+          <i class="fa-file icon"></i> Regolamento
+        </a>
+        <a class="item _780moreviewport" href="cup#past-editions">
+          <i class="fa-clock-rotate-left icon"></i> Edizioni precedenti
+        </a>
+      </div>
+    </div>
+    <a class="right item" href="{{ site.baseurl }}/tags" id="tagsbutton">
+      <i class="grid layout icon"></i> Tags
+    </a>
+  </div>
+</div>

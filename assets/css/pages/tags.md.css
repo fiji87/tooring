@@ -1,0 +1,17 @@
+.topbar {
+    border-bottom: 4px solid var(--frappe_green) !important;
+}
+
+.topbar #machinebutton {
+    background-color: var(--frappe_green) !important;
+}
+
+.topbar #cupbutton,
+.topbar #machinebutton {
+    background-color: var(--white) !important;
+}
+
+.topbar #cupbutton:hover,
+.topbar #machinebutton:hover {
+    background-color: rgba(0,0,0,.03) !important;
+}

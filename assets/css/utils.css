@@ -1,0 +1,45 @@
+@import url(colors.css);
+
+
+/***********************************************/
+/* Colors **************************************/
+/***********************************************/
+a {
+    color: var(--latte_lavander);
+}
+
+div.wrapper p a:hover,
+.post-header div.post-tags a:hover {
+    color: var(--latte_lavander);
+}
+
+/***********************************************/
+/* Fonts ***************************************/
+/***********************************************/
+*,
+nav *,
+.page-banner-inner {
+    font-family: 'Arvo';
+}
+
+
+@media screen and (min-width: 779px) {
+    ._780lessviewport {
+        display: none !important;
+    }
+
+    ._780moreviewport {
+        display: flex !important;
+    }
+}
+
+@media screen and (max-width: 779px) {
+    ._780lessviewport {
+        display: flex !important;
+    }
+
+    ._780moreviewport {
+        display: none !important;
+    }
+}
+

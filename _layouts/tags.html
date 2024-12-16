@@ -3,6 +3,12 @@ layout: framework
 sidebar: tag-list
 ---
 
+<link
+  rel="stylesheet"
+  href="{{ site.baseurl }}/assets/css/pages/{{ page.name }}.css"
+>
+
+
 {%- if site.posts.size > 0 -%}
 
   {%- include functions.html func='log' level='debug' msg='Get tags value' -%}

@@ -1,0 +1,7 @@
+.topbar {
+    border-bottom: 4px solid var(--frappe_flamingo) !important;
+}
+
+.topbar #cupbutton {
+    background-color: var(--frappe_flamingo) !important;
+}

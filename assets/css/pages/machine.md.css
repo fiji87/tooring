@@ -1,0 +1,15 @@
+.topbar {
+    border-bottom: 4px solid var(--frappe_lavander) !important;
+}
+
+.topbar #machinebutton {
+    background-color: var(--frappe_lavander) !important;
+}
+
+.topbar #cupbutton {
+    background-color: var(--white) !important;
+}
+
+.topbar #cupbutton:hover {
+    background-color: rgba(0,0,0,.03) !important;
+}

@@ -1,0 +1,41 @@
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --subtext1: #b5bfe2;
+    --subtext0: #a5adce;
+    --overlay0: #737994;
+    --overlay1: #838ba7;
+    --overlay2: #949cbb;
+    --surface0: #414559;
+    --surface1: #51576d;
+    --surface2: #626880;
+    --base: #303446;
+    --mantle: #292c3c;
+    --core: #232634;
+
+    /* frappe */
+    --frappe_rose: #f2d5cf;
+    --frappe_flamingo: #eebebe;
+    --frappe_red: #e78284;
+    --frappe_frappe_peach: #ef9f76;
+    --frappe_yellow: #e5c890;
+    --frappe_green: #a6d189;
+    --frappe_teal: #81c8be;
+    --frappe_sky: #99d1db;
+    --frappe_blue: #8caaee;
+    --frappe_lavander: #babbf1;
+    --frappe_sapphire: #85c1dc;
+
+    /* latte */
+    --latte_rosewater: #dc8a78;
+    --latte_flamingo: #dd7878;
+    --latte_red: #d20f39;
+    --latte_maroon: #e64553;
+    --latte_peach: #fe640b;
+    --latte_yellow: #df8e1d;
+    --latte_green: #40a02b;
+    --latte_teal: #179299;
+    --latte_sky: #04a5e5;
+    --latte_blue: #1e66f5;
+    --latte_lavander: #7287fd;
+}

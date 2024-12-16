@@ -1,0 +1,56 @@
+/***********************************************/
+/* Sizing **************************************/
+/***********************************************/
+/* banner adjustments at different viewport sizes */
+@media screen and (min-width: 690px) {
+    section.page-banner {
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 690px) {
+    section.page-banner {
+        background-position-x: right;
+    }
+}
+
+
+/***********************************************/
+/* Background **********************************/
+/***********************************************/
+section.page-banner {
+    background-image: url("../images/banners/turing_city.jpeg");
+    background-position-y: top -110px;
+}
+
+/* background image banner */
+section.page-banner-img > div {
+    background-position-y: top 19% !important;
+    filter: blur(15px);
+}
+
+/* banner */
+section.page-banner {
+    padding: 50px 0 50px;
+}
+
+/***********************************************/
+/* Title ***************************************/
+/***********************************************/
+/* background */
+.page-banner-inner {
+    width: 100%;
+    backdrop-filter: blur(5px) brightness(75%);
+    font-weight: bold;
+    border-radius: 4px;
+}
+
+
+/* title text padding */
+.page-banner-inner {
+    padding: 15px 20px !important;
+}
+
+/* bold title */
+.page-banner-heading {
+    font-weight: bold !important;
+}

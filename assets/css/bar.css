@@ -1,0 +1,97 @@
+/* hide default bar: I don't like it! */
+.site-brand {
+    display: none;
+}
+
+/* positioning */
+nav.site-nav,
+.page-banner {
+    position: sticky;
+}
+
+
+.topbar {
+    position: sticky;
+    min-height: unset !important;
+    z-index: 1;
+    background-color: var(--white);
+    border: none !important;
+    border-bottom: 4px solid var(--frappe_flamingo) !important;
+}
+
+.topbar.ui.attached.stackable .container .item {
+    margin-left: 0 !important;
+}
+
+/* hide box around bar title */
+.topbar div.left.item,
+.topbar p#bartitle {
+    border: none !important;
+}
+
+/* style title */
+.topbar p#bartitle {
+    font-size: 1.05em;
+    font-weight: bold;
+}
+
+.topbar #unipilogo {
+    width: 2em !important;
+    margin-right: 1em;
+}
+
+/* cup button */
+.topbar div.ui.dropdown.item#cupbutton {
+    background-color: var(--frappe_flamingo);
+}
+
+/* adjust icons in topbar */
+.topbar div.ui.container div.item a.item i.icon {
+    margin-top: -0.1em !important;
+}
+
+/* adjust cup icon */
+.topbar i.fa-trophy {
+    margin-right: 0.35714286em;
+    margin-top: 0.2em;
+}
+
+/* padding dropdown menu to acommodate icons */
+@media screen and (min-width: 780px) {
+    .topbar div.ui.dropdown.item {
+        padding-left: 26px;
+        padding-right: 26px;
+    }
+}
+
+.topbar div.ui.dropdown.item a {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.topbar .dropdown.icon {
+    display: none;
+}
+
+nav.site-nav a.page-link:hover {
+    color: var(--frappe_flamingo);
+    text-decoration: none;
+}
+
+nav.site-nav {
+    width: 100% !important;
+}
+
+
+.topbar a {
+    color: var(--black);
+}
+
+.topbar a:hover {
+    color: var(--frappe_flamingo);
+}
+
+/* hide border around bar items */
+.ui.menu .item::before {
+    content: none !important;
+}

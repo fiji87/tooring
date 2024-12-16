@@ -1,0 +1,4 @@
+/* hide sidebar in posts */
+section.sidebar {
+    display: none;
+}

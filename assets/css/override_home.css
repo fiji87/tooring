@@ -1,0 +1,9 @@
+/* hide home option in homepage */
+.topbar a.item#home {
+    display: none;
+}
+
+/* show dropdown for cup in home */
+.topbar .dropdown.icon {
+    display: inline-block;
+}
