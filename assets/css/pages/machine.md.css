@@ -1,3 +1,4 @@
+/* Bar */
 .topbar {
     border-bottom: 4px solid var(--frappe_lavander) !important;
 }
@@ -12,4 +13,21 @@
 
 .topbar #cupbutton:hover {
     background-color: rgba(0,0,0,.03) !important;
+}
+
+/* Rail segments */
+div.ui.segment {
+    border: none;
+    box-shadow: none;
+    padding: 0;
+}
+
+/* examples */
+div.ui.segment.example {
+    border: 1px solid rgba(34,36,38,.15);
+    box-shadow: 0 1px 2px 0 rgba(34,36,38,.15);
+}
+
+div.ui.segment.example > span {
+    font-weight: bold;
 }

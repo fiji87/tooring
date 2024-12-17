@@ -1,0 +1,5 @@
+/* todo: reset cupbutton color in posts */
+
+#cupbutton {
+    background-color: var(--white) !important;
+}

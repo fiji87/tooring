@@ -1,0 +1,7 @@
+.topbar {
+    border-bottom: 4px solid var(--subtext1) !important;
+}
+
+.topbar #cupbutton {
+    background-color: var(--subtext1) !important;
+}

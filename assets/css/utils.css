@@ -13,6 +13,31 @@ div.wrapper p a:hover,
     color: var(--latte_lavander);
 }
 
+
+/* Machine blocks ******************************/
+div.language-plaintext pre {
+    border-radius: 8px;
+}
+
+
+/* div.language-plaintext,
+code.language-plaintext,
+div.language-plaintext.state,
+code.language-plaintext.state {
+    background-color: var(--frappe_yellow);
+} */
+
+div.language-plaintext.symbol,
+code.language-plaintext.symbol {
+    background-color: var(--frappe_sky);
+}
+
+div.language-plaintext.tuple code,
+code.language-plaintext.tuple {
+    background-color: var(--base) !important;
+    color: var(--white);
+}
+
 /***********************************************/
 /* Fonts ***************************************/
 /***********************************************/
@@ -43,3 +68,48 @@ nav *,
     }
 }
 
+/***********************************************/
+/* Articles*************************************/
+/***********************************************/
+/* side notes */
+.ui.close.rail {
+    color: var(--surface2);
+    max-width: 200px;
+    border-radius: 8px;
+}
+
+.ui.close.rail.warning {
+    color: var(--latte_yellow);
+}
+
+.ui.close.rail.info {
+    color: var(--latte_green);
+}
+
+.ui.close.rail.error {
+    color: var(--latte_red);
+}
+
+.ui.left.very.close.rail {
+    text-align: right;
+}
+
+.ui.right.very.close.rail {
+    text-align: left;
+}
+
+
+/* handle side notes on small viewports: they get pushed into the text */
+@media screen and (max-width: 1260px) {
+    .ui.close.rail {
+        position: unset;
+        text-align: left !important;
+        padding-left: 2em !important;
+    }
+
+    /* icons to the left */
+    .ui.close.rail i {
+        float: left;
+        margin-right: 0.5em;
+    }
+}
