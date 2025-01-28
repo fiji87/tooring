@@ -50,3 +50,7 @@ iframe#emulator {
 div .list.examples img {
     margin-bottom: 25px;
 }
+
+.ui.tab.segment {
+    padding: 20px;
+}

@@ -5,3 +5,7 @@
 .topbar #cupbutton {
     background-color: var(--subtext1) !important;
 }
+
+.topbar a#home {
+    display: none;
+}

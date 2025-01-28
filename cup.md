@@ -55,7 +55,7 @@ Le domande devono contenere il nome e l'indirizzo completo della scuola, il nume
 La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galilei, che forniscono 10 immatricolazioni gratuite a qualunque corso di studio dell'Università (delibera n.135/6 del Consiglio di Amministrazione, 6 Aprile 2004), supporto organizzativo, e buoni premio per acquisto di materiale didattico per gli studenti e le scuole.
 
 <div class="ui tiny images">
-  <img class="ui image" src="/assets/images/rotary.png">
+  <img class="ui image" src="assets/images/rotary.png">
   <img class="ui image" src="https://cdn.jsdelivr.net/gh/msetzu/marpee@latest/assets/imgs/logos/unipi/SVG/cherubino_only.svg">
 </div>
 

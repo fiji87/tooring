@@ -12,6 +12,11 @@ title: La macchina
 </script>
 
 
+<script>
+    $(document).ready(function(){
+        $(".menu .item").tab();
+    });
+</script>
 
 # La Macchina di Turing
 
@@ -123,157 +128,156 @@ stato-interno-corrente, simbolo-letto
 
 allora la MdT si ferma e termina la sua computazione.
 
+## Esempi
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="first">PAri e disBari</a>
+  <a class="item" data-tab="second">Sequenza infinitAAAA</a>
+  <a class="item" data-tab="third">DimezzAtore</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="first">
+  <div markdown="1">
+  Consideriamo ad esempio una MdT che modifica una sequenza di `A` rimpiazzando ogni `A` in posizione dispari con una `B` (la prima `A` ha posizione pari uguale a `0`).
+  Una tale MdT può essere definita dal seguente insieme di regole:
 
-<div class="ui padded segment example">
-<span>Esempio.</span>
+  </div>
 
-<div markdown="1">
-Consideriamo ad esempio una MdT che modifica una sequenza di `A` rimpiazzando ogni `A` in posizione dispari con una `B` (la prima `A` ha posizione pari uguale a `0`).
-Una tale MdT può essere definita dal seguente insieme di regole:
+  <div class="language-plaintext tuple" markdown="1">
+
+  ```
+  0 A 1 A >
+  1 A 0 B >
+  0 - FINE - -
+  1 - FINE - -
+  ```
+
+  </div>
+  <div markdown="1">
+  La prima quintupla stabilisce l'azione che la macchina deve eseguire quando si trova nello stato interno 0 e il simbolo in lettura è `A`.
+  Tale situazione corrisponde ad una A in posizione pari Ad esempio consideriamo la situazione iniziale in cui la sequenza di ingresso è `AA`: 
+
+  <!-- TODO: add img -->
+
+  La macchina si trova nello stato interno iniziale 0 ed il simbolo in lettura è A.
+  (Graficamente rappresentiamo questa situazione indicando lo stato interno della macchina sopra la cella in lettura.) 
+
+  La prima quintupla stabilisce che la macchina deve cambiare il proprio stato interno in `1`, scrivere il simbolo `A` sul nastro e spostarsi di una casella verso destra.
+  Tale situazione corrisponde ad una `A` in posizione dispari, ottenendo: 
+
+  <!-- TODO: add img -->
+
+  Dopo aver effettuato la prima mossa, la macchina si trova nello stato `1` ed in simbolo in lettura è `B`.
+  In questo caso la seconda regola stabilisce che la macchina torna nello stato `0`, scrivendo il simbolo A spostando la testina a destra di una cella, ottenendo così la nuova configurazione: 
+
+  <!-- TODO: add img -->
+
+  Secondo quanto stabilito dalla terza regola, la macchina trova la casella bianca e si muove nello stato etichettato come `FINE`: 
+
+  A questo punto la macchina si trova nello stato `FINE` e la cella in lettura è vuota.
+  La macchina quindi si ferma, terminando la sua computazione, dato che non ha nessuna quadrupla che associ un'azione alla coppia `(FINE, -)`.
+
+  La macchina di esempio quindi una sequenza di simboli `A` in una sequenza in cui tutte le A in posizione dispari sono sostituite con una `B`.
+  </div>
 
 </div>
+<div class="ui bottom attached tab segment" data-tab="second">
+  <div markdown="1">
+  Si noti che una MdT può non terminare la sua computazione su certe sequenze di ingresso.
+  Ad esempio la MdT definita dalle quintuple: 
 
-<div class="language-plaintext tuple" markdown="1">
+  <div class="language-plaintext tuple" markdown="1">
+  ```
+  0 A 1 A >
+  1 A 0 A <
+  ```
+  </div>
 
-```
-0 A 1 A >
-1 A 0 B >
-0 - FINE - -
-1 - FINE - -
-```
+  non si fermerà mai per qualunque sequenza di ingresso che inizi per `AA`, perché continuerà a spostare la testina tra il primo e il secondo carattere dell'input.
 
+  </div>
 </div>
-<div markdown="1">
-La prima quintupla stabilisce l'azione che la macchina deve eseguire quando si trova nello stato interno 0 e il simbolo in lettura è `A`.
-Tale situazione corrisponde ad una A in posizione pari Ad esempio consideriamo la situazione iniziale in cui la sequenza di ingresso è `AA`: 
+<div class="ui bottom attached tab segment" data-tab="third">
+  <div markdown="1">
 
-<!-- TODO: add img -->
+  Dato un numero intero positivo $n$, `n div 2` è il quoziente della divisione di $n$ per f2$.
+  Ad esempio, `6 div 2 = 3`, mentre `9 div 2 = 4`.
 
-La macchina si trova nello stato interno iniziale 0 ed il simbolo in lettura è A.
-(Graficamente rappresentiamo questa situazione indicando lo stato interno della macchina sopra la cella in lettura.) 
 
-La prima quintupla stabilisce che la macchina deve cambiare il proprio stato interno in `1`, scrivere il simbolo `A` sul nastro e spostarsi di una casella verso destra.
-Tale situazione corrisponde ad una `A` in posizione dispari, ottenendo: 
+  Consideriamo il problema di programmare una macchina di Turing che, dato un nastro iniziale contenente una sequenza composta da $n$ `A` consecutive (con $n > 1$), termina la sua esecuzione lasciando sul nastro la sequenza composta da `n div 2 A` consecutive.
 
-<!-- TODO: add img -->
+  Ad esempio: 
 
-Dopo aver effettuato la prima mossa, la macchina si trova nello stato `1` ed in simbolo in lettura è `B`.
-In questo caso la seconda regola stabilisce che la macchina torna nello stato `0`, scrivendo il simbolo A spostando la testina a destra di una cella, ottenendo così la nuova configurazione: 
+  | Nastro iniziale | Nastro finale |
+  | - | - |
+  | `AAAA` | `AA` |
+  | `AAAAA` | `AA` |
+  | `AAA` | `A` |
+  | `AA` | `A` |
 
-<!-- TODO: add img -->
 
-Secondo quanto stabilito dalla terza regola, la macchina trova la casella bianca e si muove nello stato etichettato come `FINE`: 
+  Una MdT che risolva il problema in esame può ad esempio adottare la seguente strategia: 
 
-A questo punto la macchina si trova nello stato `FINE` e la cella in lettura è vuota.
-La macchina quindi si ferma, terminando la sua computazione, dato che non ha nessuna quadrupla che associ un'azione alla coppia `(FINE, -)`.
+  1. scorre la sequenza di ingresso, partendo dalla `A` più a sinistra;
+  2.  se la sequenza di ingresso contiene una sola `A`, la cancella e si ferma;
+  3.  se invece la sequenza di ingresso contiene almeno due `A`, le cancella entrambe e va 
+  ad aggiungere una `A` alla sequenza "di uscita", nella parte del nastro che si trova a destra della sequenza di ingresso.
+  Quindi torna sulla cella più a sinistra di ciò che rimane della sequenza di ingresso e riparte da `(1)`.
+
+  Una MdT che si comporti nel modo appena descritto può essere definita dal seguente insieme di quintuple: 
+
+  <div class="language-plaintext tuple" markdown="1">
+
+  ```
+  0 A 1 - >
+  1 A 2 - >
+  2 A 2 A >
+  2 - 3 - >
+  3 - 4 A <
+  3 A 3 A >
+  4 A 4 A <
+  4 - 5 - <
+  5 A 5 A <
+  5 - 0 - >
+  0 - F - -
+  ```
+
+  </div>
+
+  Lo stato `0` è utilizzato dalla macchina per cancellare la prima `A` dalla sequenza di ingresso, mentre lo stato `1` permette di cancellare la seconda `A` della sequenza, se esiste.
+  Si noti che se la sequenza contiene soltanto una `A` allora la macchina si ferma nello stato `1` sulla cella vuota.
+  Lo stato `2` permette di scorrere la parte rimanente della sequenza di ingresso, ovvero fino a quando non si incontra la cella vuota.
+  A questo punto la macchina utilizza lo stato `3` per andare a scrivere una `A` a destra della sequenza "di uscita".
+  Lo stato `4` serve quindi per ripercorre verso sinistra la sequenza di uscita, e lo stato `5` permette di controllare se la sequenza di ingresso contiene ancora qualche `A`.
+  Se così è allora la macchina riporta la testina sul simbolo più a sinistra della sequenza di ingresso (stato `8`) e riparte dallo stato `0`, altrimenti la macchina si ferma nello stato `F`.
+
+
+  Ad esempio per la sequenza di ingresso `AAAA` la MdT appena descritta esegue la seguente computazione: 
+
+  <div class="list examples">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t0.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t1.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t2.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t3.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t4.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t5.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t6.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t7.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t8.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t9.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t10.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t11.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t12.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t13.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t14.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t15.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t16.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t17.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t18.svg">
+    <img class="ui centered large image" src="assets/images/machine/ahalver/t19.svg">
+  </div>
+
+  La macchina si ferma quindi nello stato `F`.
+  </div>
 </div>
-
-
-La macchina di esempio quindi una sequenza di simboli `A` in una sequenza in cui tutte le A in posizione dispari sono sostituite con una `B`.
-tex2html_wrap_inline629
-
-
-</div>
-
-<div class="ui padded segment example">
-<span>Esempio.</span>
-
-<div markdown="1">
-Si noti che una MdT può non terminare la sua computazione su certe sequenze di ingresso.
-Ad esempio la MdT definita dalle quintuple: 
-
-<div class="language-plaintext tuple" markdown="1">
-```
-0 A 1 A >
-1 A 0 A <
-```
-</div>
-
-non si fermerà mai per qualunque sequenza di ingresso che inizi per AA, perché continuerà a spostare la testina tra il primo e il secondo carattere dell'input.
-tex2html_wrap_inline629
-
-ESEMPIO 3.
-Dato un numero intero positivo n, n div 2 è il quoziente della divisione di n per 2.
-Ad esempio, `6 div 2 = 3`, mentre `9 div 2 = 4`.
-
-
-Consideriamo il problema di programmare una macchina di Turing che, dato un nastro iniziale contenente una sequenza composta da nA consecutive (con n > 1), termina la sua esecuzione lasciando sul nastro la sequenza composta da n div 2 A consecutive.
-
-Ad esempio: 
-
-| Nastro iniziale | Nastro finale |
-| - | - |
-| `AAAA` | `AA` |
-| `AAAAA` | `AA` |
-| `AAA` | `A` |
-| `AA` | `A` |
-
-
-Una MdT che risolva il problema in esame può ad esempio adottare la seguente strategia: 
-
-1. scorre la sequenza di ingresso, partendo dalla `A` più a sinistra;
-2.  se la sequenza di ingresso contiene una sola `A`, la cancella e si ferma;
-3.  se invece la sequenza di ingresso contiene almeno due `A`, le cancella entrambe e va 
-ad aggiungere una `A` alla sequenza "di uscita", nella parte del nastro che si trova a destra della sequenza di ingresso.
-Quindi torna sulla cella più a sinistra di ciò che rimane della sequenza di ingresso e riparte da `(1)`.
-
-Una MdT che si comporti nel modo appena descritto può essere definita dal seguente insieme di quintuple: 
-
-<div class="language-plaintext tuple" markdown="1">
-
-```
-0 A 1 - >
-1 A 2 - >
-2 A 2 A >
-2 - 3 - >
-3 - 4 A <
-3 A 3 A >
-4 A 4 A <
-4 - 5 - <
-5 A 5 A <
-5 - 0 - >
-0 - F - -
-```
-
-</div>
-
-Lo stato `0` è utilizzato dalla macchina per cancellare la prima `A` dalla sequenza di ingresso, mentre lo stato `1` permette di cancellare la seconda `A` della sequenza, se esiste.
-Si noti che se la sequenza contiene soltanto una `A` allora la macchina si ferma nello stato `1` sulla cella vuota.
-Lo stato `2` permette di scorrere la parte rimanente della sequenza di ingresso, ovvero fino a quando non si incontra la cella vuota.
-A questo punto la macchina utilizza lo stato `3` per andare a scrivere una `A` a destra della sequenza "di uscita".
-Lo stato `4` serve quindi per ripercorre verso sinistra la sequenza di uscita, e lo stato `5` permette di controllare se la sequenza di ingresso contiene ancora qualche `A`.
-Se così è allora la macchina riporta la testina sul simbolo più a sinistra della sequenza di ingresso (stato `8`) e riparte dallo stato `0`, altrimenti la macchina si ferma nello stato `F`.
-
-
-Ad esempio per la sequenza di ingresso `AAAA` la MdT appena descritta esegue la seguente computazione: 
-
-<div class="list examples">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t0.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t1.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t2.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t3.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t4.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t5.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t6.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t7.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t8.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t9.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t10.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t11.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t12.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t13.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t14.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t15.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t16.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t17.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t18.svg">
-  <img class="ui centered large image" src="assets/images/machine/ahalver/t19.svg">
-</div>
-
-La macchina si ferma quindi nello stato `F`.
-</div>
-</div>
-
 
 
 ## Simulatore di macchine di Turing
@@ -284,10 +288,6 @@ Disponibile su [turingsimulator.net](https://www.turingsimulator.net/).
   id="emulator"
   src="https://www.turingsimulator.net/"
 >
-
-#todo: english translation
-#todo: remove posts
-#todo: images
 
 Esistono molti programmi "simulatori" di macchine di Turing, ovvero programmi capaci di simulare il comportamento di una macchina di Turing mostrandone il comportamento sullo schermo di un calcolatore. 
 

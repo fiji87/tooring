@@ -38,7 +38,7 @@ div.articles ul.post-list span.post-badges span.post-badge.badge-new {
 }
 
 .post-list .post-tag:hover {
-    color: var(--base) !important;
+    color: var(--white) !important;
     border-color: var(--latte_lavander) !important;
     background-color: var(--latte_lavander);
 }
