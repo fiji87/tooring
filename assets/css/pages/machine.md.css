@@ -31,3 +31,22 @@ div.ui.segment.example {
 div.ui.segment.example > span {
     font-weight: bold;
 }
+
+/* Emulator */
+iframe#emulator {
+    min-height: 610px;
+    width: 100%;
+    zoom: 0.9;
+    -moz-transform: scale(0.9);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.9);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.9);
+    -webkit-transform-origin: 0 0;
+    margin-left: 5%;
+}
+
+/* Examples */
+div .list.examples img {
+    margin-bottom: 25px;
+}

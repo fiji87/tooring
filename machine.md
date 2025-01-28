@@ -67,11 +67,11 @@ Ad esempio la quintupla `(1, A, 2, -, -)` indica che se la macchina si trova nel
 
 Il simbolo `-` viene quindi utilizzato sia per rappresentare la cella vuota che per denotare il mancato movimento della testina.
 
-<div class="ui left very close rail warning">
+<!-- <div class="ui left very close rail warning">
   <div class="ui segment">
     Nota con warning!
   </div>
-</div>
+</div> -->
 
 </div>
 
@@ -81,49 +81,45 @@ Il simbolo `-` viene quindi utilizzato sia per rappresentare la cella vuota che 
 Si noti che una MdT può compiere un'azione anche quando incontra la cella vuota.
 Ad esempio la quintupla `(2, -, 2, -, <)` indica che se la macchina si trova nello stato `2` e legge una cella vuota allora lascia invariato il contenuto della cella e si sposta di una posizione a sinistra rimanendo nello stesso stato.
 
-<div class="ui left very close rail info">
+<!-- <div class="ui left very close rail">
   <div class="ui segment">
     Nota a margine: utile!
   </div>
-</div>
+</div> -->
 
 </div>
 
 
 Si noti infine che un insieme di quintuple associa ad ogni coppia: 
 
+<div class="language-plaintext tuple" markdown="1">
 ```
 stato-interno-corrente, simbolo-letto
 ```
+</div>
+<div class="language-plaintext tuple" markdown="1">
 al più una tripla: 
 ```
 prossimo-stato-interno, simbolo-scritto, direzione
 ```
+</div>
 
 Vediamo adesso come una MdT effettua i suoi calcoli.
 Inizialmente il nastro contiene una sequenza finita di simboli, detta sequenza di ingresso.
 La MdT è nel suo stato interno iniziale 0 con la testina posizionata sul simbolo più a sinistra nel nastro.
-
-<div class="ui right very close rail info">
-  <div class="ui segment">
-    Nota con info!
-  </div>
-</div>
 
 A partire da questa configurazione iniziale, la MdT effettua una serie di azioni seguendo rigorosamente il suo insieme di regole.
 
 <div class="ui segment" markdown="1">
 
 Se la macchina raggiunge uno stato interno per cui non esiste nessuna quintupla per la coppia: 
-<div class="ui left very close rail error">
-  <div class="ui segment">
-    Nota con errore!
-  </div>
-</div>
 
-</div>
-
+<div class="language-plaintext tuple" markdown="1">
+```
 stato-interno-corrente, simbolo-letto
+```
+</div>
+</div>
 
 allora la MdT si ferma e termina la sua computazione.
 
@@ -133,7 +129,8 @@ allora la MdT si ferma e termina la sua computazione.
 
 <div markdown="1">
 Consideriamo ad esempio una MdT che modifica una sequenza di `A` rimpiazzando ogni `A` in posizione dispari con una `B` (la prima `A` ha posizione pari uguale a `0`).
-Una tale MdT può essere definita dal seguente insieme di regole: 
+Una tale MdT può essere definita dal seguente insieme di regole:
+
 </div>
 
 <div class="language-plaintext tuple" markdown="1">
@@ -150,14 +147,20 @@ Una tale MdT può essere definita dal seguente insieme di regole:
 La prima quintupla stabilisce l'azione che la macchina deve eseguire quando si trova nello stato interno 0 e il simbolo in lettura è `A`.
 Tale situazione corrisponde ad una A in posizione pari Ad esempio consideriamo la situazione iniziale in cui la sequenza di ingresso è `AA`: 
 
+<!-- TODO: add img -->
+
 La macchina si trova nello stato interno iniziale 0 ed il simbolo in lettura è A.
 (Graficamente rappresentiamo questa situazione indicando lo stato interno della macchina sopra la cella in lettura.) 
 
 La prima quintupla stabilisce che la macchina deve cambiare il proprio stato interno in `1`, scrivere il simbolo `A` sul nastro e spostarsi di una casella verso destra.
 Tale situazione corrisponde ad una `A` in posizione dispari, ottenendo: 
 
+<!-- TODO: add img -->
+
 Dopo aver effettuato la prima mossa, la macchina si trova nello stato `1` ed in simbolo in lettura è `B`.
 In questo caso la seconda regola stabilisce che la macchina torna nello stato `0`, scrivendo il simbolo A spostando la testina a destra di una cella, ottenendo così la nuova configurazione: 
+
+<!-- TODO: add img -->
 
 Secondo quanto stabilito dalla terza regola, la macchina trova la casella bianca e si muove nello stato etichettato come `FINE`: 
 
@@ -172,14 +175,19 @@ tex2html_wrap_inline629
 
 </div>
 
-ESEMPIO 2.
+<div class="ui padded segment example">
+<span>Esempio.</span>
+
+<div markdown="1">
 Si noti che una MdT può non terminare la sua computazione su certe sequenze di ingresso.
 Ad esempio la MdT definita dalle quintuple: 
 
+<div class="language-plaintext tuple" markdown="1">
 ```
 0 A 1 A >
 1 A 0 A <
 ```
+</div>
 
 non si fermerà mai per qualunque sequenza di ingresso che inizi per AA, perché continuerà a spostare la testina tra il primo e il secondo carattere dell'input.
 tex2html_wrap_inline629
@@ -239,23 +247,58 @@ Se così è allora la macchina riporta la testina sul simbolo più a sinistra de
 
 Ad esempio per la sequenza di ingresso `AAAA` la MdT appena descritta esegue la seguente computazione: 
 
-La macchina si ferma quindi nello stato `F`. tex2html_wrap_inline629
+<div class="list examples">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t0.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t1.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t2.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t3.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t4.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t5.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t6.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t7.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t8.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t9.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t10.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t11.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t12.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t13.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t14.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t15.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t16.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t17.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t18.svg">
+  <img class="ui centered large image" src="/assets/images/machine/ahalver/t19.svg">
+</div>
 
-Simulatore di macchine di Turing
+La macchina si ferma quindi nello stato `F`.
+</div>
+</div>
+
+
+
+## Simulatore di macchine di Turing
+
+Disponibile su [turingsimulator.net](https://www.turingsimulator.net/).
+
+<iframe
+  id="emulator"
+  src="https://www.turingsimulator.net/"
+>
+
+#todo: english translation
+#todo: remove posts
+#todo: images
+
 Esistono molti programmi "simulatori" di macchine di Turing, ovvero programmi capaci di simulare il comportamento di una macchina di Turing mostrandone il comportamento sullo schermo di un calcolatore. 
 
 
 I partecipanti alla gara di informatica per studenti delle scuole superiori utilizzano un simulatore di macchine di Turing di facile utilizzo anche per chi non ha dimestichezza con l'uso dei calcolatori. 
 
-
 Il simulatore è stato scritto in Java e realizzato all'interno del Dipartimento di Informatica dell'Università di Pisa.
 
-Molto brevemente, questo simulatore mostra sullo schermo una macchina di Turing (raffigurata come una specie di macchina a vapore) che corre su un nastro. Per esigenze di visualizzazione, lo spostamento della testina in una direzione è mostrato tramite lo spostamento del nastro nella direzione opposta, così da avere la testina sempre al centro dello schermo. Il simulatore inoltre mostra:
-<div class="ui right very close rail info">
-  <div class="ui segment">
-    Nota con info!
-  </div>
-</div>
+Molto brevemente, questo simulatore mostra sullo schermo una macchina di Turing (raffigurata come una specie di macchina a vapore) che corre su un nastro.
+Per esigenze di visualizzazione, lo spostamento della testina in una direzione è mostrato tramite lo spostamento del nastro nella direzione opposta, così da avere la testina sempre al centro dello schermo. Il simulatore inoltre mostra:
+
 
 - due ?finestre? in cui possono essere inserite direttamente le regole della macchina di Turing in corso di realizzazione (finestra verticale a destra) e il contenuto iniziale del nastro (finestra orizzontale in basso);
 - un pulsante CARICA per caricare le regole di una MdT da una lista di macchine date, ed un pulsante SALVA per memorizzare le modifiche apportate alle regole che definiscono la MdT;
