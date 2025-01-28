@@ -248,26 +248,26 @@ Se così è allora la macchina riporta la testina sul simbolo più a sinistra de
 Ad esempio per la sequenza di ingresso `AAAA` la MdT appena descritta esegue la seguente computazione: 
 
 <div class="list examples">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t0.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t1.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t2.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t3.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t4.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t5.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t6.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t7.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t8.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t9.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t10.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t11.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t12.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t13.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t14.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t15.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t16.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t17.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t18.svg">
-  <img class="ui centered large image" src="/assets/images/machine/ahalver/t19.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t0.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t1.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t2.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t3.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t4.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t5.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t6.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t7.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t8.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t9.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t10.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t11.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t12.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t13.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t14.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t15.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t16.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t17.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t18.svg">
+  <img class="ui centered large image" src="assets/images/machine/ahalver/t19.svg">
 </div>
 
 La macchina si ferma quindi nello stato `F`.
