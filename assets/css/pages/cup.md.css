@@ -5,3 +5,8 @@
 .topbar #cupbutton {
     background-color: var(--frappe_flamingo) !important;
 }
+
+/* testo in pdf */
+div embed {
+    min-height: 768px;
+}

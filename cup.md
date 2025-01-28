@@ -7,6 +7,11 @@ title: The Cup
   rel="stylesheet"
   href="{{ site.baseurl }}/assets/css/pages/{{ page.name }}.css"
 >
+<script>
+    $(document).ready(function(){
+        $(".menu .item").tab();
+    });
+</script>
 
 
 ## The Turing Cup
@@ -65,6 +70,12 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 <h3 class="edition" id="edition23">Edizione 23</h3>
 <p class="year">2019</p>
 
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica23">Graduatoria</a>
+  <a class="item" data-tab="testo23">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica23" markdown="1">
+
 
 | Partecipanti | Liceo | |
 | --- | --- | --- |
@@ -79,8 +90,28 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 | Cadoni Valentino, Piedimonte Giusto       | IIS "Michele Giua" | Cagliari                      |
 | Xu Siyang, Dall’Armi Filippo              | IIS "Einaudi - Scarpa" | Montebelluna         |
 
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo23">
+  <embed
+    src="assets/cup/texts/23.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
+
+
+
 <h3 class="edition" id="edition22">Edizione 22</h3>
 <p class="year">2018</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica22">Graduatoria</a>
+  <a class="item" data-tab="testo22">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica22" markdown="1">
 
 | Partecipanti | Liceo | |
 | --- | --- | --- |
@@ -94,6 +125,18 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 | Giovannini Simone e Maranghi Roberto      | IIS "Tullio Buzzi"                | Prato                              |
 | Bonucci Leonardo e Amonov Shahruz         | IIS "Tito Sarrocchi"              | Siena                               |
 | Xu Siyang e Dall’Armi Filippo             | IIS "Einaudi - Scarpa"            | Montebelluna                     |
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo22">
+  <embed
+    src="assets/cup/texts/22.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
 
 <h3 class="edition" id="edition21">Edizione 21</h3>
 <p class="year">2017</p>
