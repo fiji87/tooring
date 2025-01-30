@@ -1,0 +1,19 @@
+/* enlarge content width to enclose full-width emulator iframe */
+.wrapper,
+iframe#emulator {
+    width: 950px;
+    max-width: 950px;
+    min-height: 610px;
+}
+
+.topbar div.ui.dropdown.item#cupbutton {
+    background-color: white !important;
+}
+
+.topbar #emulatorbutton {
+    background-color: var(--frappe_teal) !important;
+}
+
+.topbar {
+    border-color: var(--frappe_teal) !important;
+}

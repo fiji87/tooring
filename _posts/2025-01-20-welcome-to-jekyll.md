@@ -2,11 +2,13 @@
 layout: post
 title: La gara nazionale della Macchina di Turing
 author: Alessio Conte
+excerpt_image: assets/images/banners/turing_city.jpeg
 tags:
   - info
 top: 1
 sidebar: []
 ---
+
 
 La gara delle Macchine di Turing promossa dal Dipartimento di Informatica dell’Università di Pisa, nasce nel 1997 come iniziativa per la settimana della cultura promossa dal Ministero dell’Università e della Ricerca e organizzata dal Prof. Brogi. L’iniziativa fu concepita sia come strumento per diffondere la cultura informatica che come un modo per orientare i ragazzi delle scuole medie superiori verso l’informatica come disciplina e non semplicemente studio dell’uso del computer e di alcuni suoi programmi.
 

@@ -3,10 +3,6 @@ layout: default
 title: La macchina
 ---
 
-<link
-  rel="stylesheet"
-  href="{{ site.baseurl }}/assets/css/pages/{{ page.name }}.css"
->
 <script
   src="{{ site.baseurl }}/assets/js/machine.js">
 </script>
@@ -152,25 +148,46 @@ allora la MdT si ferma e termina la sua computazione.
 
   </div>
   <div markdown="1">
+
   La prima quintupla stabilisce l'azione che la macchina deve eseguire quando si trova nello stato interno 0 e il simbolo in lettura è `A`.
-  Tale situazione corrisponde ad una A in posizione pari Ad esempio consideriamo la situazione iniziale in cui la sequenza di ingresso è `AA`: 
+  Tale situazione corrisponde ad una `A` in posizione pari Ad esempio consideriamo la situazione iniziale in cui la sequenza di ingresso è `AA`: 
 
-  <!-- TODO: add img -->
+  <div class="language-plaintext tuple" markdown="1">
 
-  La macchina si trova nello stato interno iniziale 0 ed il simbolo in lettura è A.
+  ```
+  AA
+  ```
+
+  </div>
+
+  La macchina si trova nello stato interno iniziale `0` ed il simbolo in lettura è A.
   (Graficamente rappresentiamo questa situazione indicando lo stato interno della macchina sopra la cella in lettura.) 
 
   La prima quintupla stabilisce che la macchina deve cambiare il proprio stato interno in `1`, scrivere il simbolo `A` sul nastro e spostarsi di una casella verso destra.
   Tale situazione corrisponde ad una `A` in posizione dispari, ottenendo: 
 
-  <!-- TODO: add img -->
+  
+  <div class="language-plaintext tuple" markdown="1">
+
+  ```
+  AB
+  ```
+
+  </div>
 
   Dopo aver effettuato la prima mossa, la macchina si trova nello stato `1` ed in simbolo in lettura è `B`.
   In questo caso la seconda regola stabilisce che la macchina torna nello stato `0`, scrivendo il simbolo A spostando la testina a destra di una cella, ottenendo così la nuova configurazione: 
 
-  <!-- TODO: add img -->
+  
+  <div class="language-plaintext tuple" markdown="1">
 
-  Secondo quanto stabilito dalla terza regola, la macchina trova la casella bianca e si muove nello stato etichettato come `FINE`: 
+  ```
+  AB
+  ```
+
+  </div>
+
+  Secondo quanto stabilito dalla terza regola, la macchina trova la casella bianca e si muove nello stato etichettato come `FINE`.
 
   A questo punto la macchina si trova nello stato `FINE` e la cella in lettura è vuota.
   La macchina quindi si ferma, terminando la sua computazione, dato che non ha nessuna quadrupla che associ un'azione alla coppia `(FINE, -)`.

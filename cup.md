@@ -140,6 +140,11 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 
 <h3 class="edition" id="edition21">Edizione 21</h3>
 <p class="year">2017</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica21">Graduatoria</a>
+  <a class="item" data-tab="testo21">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica21" markdown="1">
 
 | Partecipanti | Liceo | |
 | --- | --- | --- |
@@ -154,9 +159,26 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 | Matteo Gorbini e Alek Sander Sokoli| IIS "Capellini-Sauro"| La Spezia |
 | Mercuri Daniele e Lazzari Marco| LS "G.B. Grassi"| Latina |
 
+</div>
+
+<div class="ui bottom attached tab segment" data-tab="testo21">
+  <embed
+    src="assets/cup/texts/21.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
 
 <h3 class="edition" id="edition20">Edizione 20</h3>
 <p class="year">2016</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica20">Graduatoria</a>
+  <a class="item" data-tab="testo20">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica20" markdown="1">
 
 | Partecipanti | Liceo | |
 | --- | --- | --- |
@@ -170,6 +192,67 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 | Giovannini Simone e Sammarco Danilo|  IIS "Tullio Buzzi"|  Prato |
 | D'Alfonso Matteo e Zappacosta Antony|  IIS "Luigi di Savoia"|  Chieti |
 | Rivelli Federico e Guggino Filippo|  IIS "Ferraris-Brunelleschi"|  Empoli |
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo20" markdown="1">
+
+*AVVISI:*
+
+
+- Se non specificato altrimenti negli esercizi, le sequenze iniziali su nastro si intendono *non vuote*, ovvero contenenti almeno un
+simbolo.
+- Per numero decimale si intende un numero positivo o nullo rappresentato con le cifre 0, 1, 2, ..., 9, senza zeri iniziali non significativi; per esempio 0 e 19 sono numeri validi, mentre 0032 deve essere scritto come 32.
+- Nel fornire le soluzioni, ricordarsi di pulire il nastro finale da ogni simbolo che non costituisca la risposta!
+- Ogni volta che si salva la soluzione di un esercizio con il simulatore della macchina di Turing, il “timestamp” dell'esercizio viene aggiornato con il tempo trascorso fino a quel momento.
+
+
+**Esercizio 1: In tempi di crisi. \[Punti 1\]** La prima regola della buona amministrazione casalinga è: fai economia su ogni piccola spesa.
+Ogni euro risparmiato è un euro guadagnato. Se ieri spendevi $k$ euro per qualcosa, cerca oggi di comprarlo per *k*-1. E per aiutare a fare
+questi conti, si scriva un programma per macchina di Turing che, ricevuto su nastro un intero maggiore di 0, rappresentante la spesa di ieri, lasci sul nastro l'intero $k - 1$, che è quello che possiamo spendere oggi.
+
+| Nastro iniziale | Nastro finale |
+| --- | --- |
+| EEEEE | 5 |
+| EEEEEEEEEEEEEEEEEEEEEEE | 23 |
+| | 0 |
+| E | 1 |
+
+
+**Esercizio 2: Il salvadanaio. \[Punti 2\]** Mettiamo ogni euro
+risparmiato in un salvadanaio a colonna. Questi salvadanai consistono di
+un tubo (solitamente trasparente) disposto in verticale, in cui le
+monete si dispongono per gravità in una colonna ordinata la cui altezza
+indica direttamente il valore del contenuto. Nella nostra versione,
+rappresenteremo ogni moneta (da 1 euro) inserita nel salvadanaio con un
+simbolo E sul nastro. Si scriva un programma per macchina di Turing che,
+ricevuta sul nastro la rappresentazione di un salvadanaio (anche vuoto)
+come indicato sopra, lasci sul nastro al termine della computazione la
+rappresentazione del totale risparmiato, in euro, espressa come numero
+intero.
+
+
+| Nastro iniziale | Nastro finale |
+|----|----|
+| 12 | 11 |
+| 1 | 0 |
+| 1240 | 1239 |
+
+**Esercizio 3: Risparmio. \[Punti 4\]** Naturalmente, se si può
+risparmiare più di un euro, tanto meglio! Si scriva un programma per
+macchina di Turing che, ricevuto sul nastro un intero rappresentante la
+spesa di ieri *k*, seguito da uno spazio e dalla spesa di oggi *h*, con
+*h* e *k* strettamente positivi e *h\<k,* lasci sul nastro il risparmio,
+ovvero *k-h*.
+
+| Nastro|| Nastro iniziale || Nastro finale |
+|----|----|
+| 17 15 | 2 |
+| 1020 950 | 70 |
+| 2 1 | 1 |
+| 10000 9000 | 1000 |
+
+
+</div>
 
 <h3 class="edition" id="edition19">Edizione 19</h3>
 <p class="year">2015</p>
