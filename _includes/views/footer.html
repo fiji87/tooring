@@ -3,19 +3,23 @@
 
   <div class="wrapper">
     <div class="site-footer-inner">
-        {%- assign currentYear = 'now' | date: "%Y" -%}
-        {%- assign copyright = site.copyright
-            | replace: '{currentYear}', currentYear
-            | replace: '{author}', site.author
-            | replace: '(c)', '&copy;'
-            | replace: '(p)', '℗'
-            | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
+      {%- assign currentYear = 'now' | date: "%Y" -%}
+      {%- assign copyright = site.copyright
+        | replace: '{currentYear}', currentYear
+        | replace: '{author}', site.author
+        | replace: '(c)', '&copy;'
+        | replace: '(p)', '℗'
+        | replace: '(cleft)', '<span class="copyleft">&copy;</span>'
         -%}
+        <div><b>Organizzazione</b></div>
+        <div><a href="https://di.unipi.it/">Dipartimento di Informatica</a></div>
+        <div><a id="unipi" href="https://www.unipi.it/">Università di Pisa</a></div>
+      <div><b>Sito</b></div>
       <div>{{ copyright }}</div>
       <div>Powered by <a title="Jekyll is a simple, blog-aware, static site
       generator." href="https://jekyllrb.com/">Jekyll</a> &amp; <a title="Yat, yet
       another theme." href="https://github.com/jeffreytse/jekyll-theme-yat">Yat Theme</a>.</div>
-      <div class="footer-col rss-subscribe">Subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></div>
+      <div class="footer-col rss-subscribe"><a href="{{ "/feed.xml" | relative_url }}">Feed RSS</a></div>
     </div>
   </div>
 </footer>

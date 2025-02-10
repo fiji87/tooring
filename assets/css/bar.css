@@ -69,10 +69,6 @@ nav.site-nav,
     padding-right: 10px;
 }
 
-.topbar .dropdown.icon {
-    display: none;
-}
-
 nav.site-nav a.page-link:hover {
     color: var(--frappe_flamingo);
     text-decoration: none;
@@ -89,6 +85,10 @@ nav.site-nav {
 
 .topbar a:hover {
     color: var(--frappe_flamingo);
+}
+
+.topbar a#unipi:hover {
+    color: var(--black);
 }
 
 /* hide border around bar items */
