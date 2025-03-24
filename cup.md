@@ -66,6 +66,157 @@ La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 
 ## Past editions
 
+<h3 class="edition" id="edition26">Edizione 27</h3>
+<p class="year">2024</p>
+
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica27">Graduatoria</a>
+  <a class="item" data-tab="testo27">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica27" markdown="1">
+
+
+| Partecipanti | Istituzione | |
+| --- | --- | --- |
+| Matteo Mariani & Mattia Zampi                   | IIS Marconi                         | Latina       |
+| Lorenzo Lantero & Ludovica Pietrobono           | Liceo Massimo D'Azeglio             | Torino       |
+| Trevisani Mattia & Forsi Edoardo                | ITI. G. Marconi,                    | Pontedera    |
+| Jonas Vitali & Andrea Gennaioli                 | ITIS E. Mattei                      | Urbino       |
+| Leonardo  Giovanni Selbach & Francesco Nagni    | Liceo Vito Volterra                 | Ciampino     |
+| Matteo Petretti & Francesco Vellutini           | Polo Fermi Giorgi                   | Lucca        |
+| Cristian Arcolin & Gabriele D'Elia              | IIS Marconi                         | Latina       |
+| Tommaso Nencini & Tommaso Maestri Accesi        | Liceo Ulisse Dini                   | Pisa         |
+| Elisa Bilotta & Daniele Tiburzi                 | Liceo Paolo Giovio                  | Como         |
+| Gabriel Ferreri & Gregorio Pescucci             | Polo Tecnologico Manetti Porciatti  | Grosseto     |
+
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo27">
+  <embed
+    src="assets/cup/texts/27.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
+
+<h3 class="edition" id="edition26">Edizione 26</h3>
+<p class="year">2023</p>
+
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica26">Graduatoria</a>
+  <a class="item" data-tab="testo26">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica26" markdown="1">
+
+
+| Partecipanti | Istituzione | |
+| --- | --- | --- |
+| Samuele Nigro & Ettore Franchi          | ITS Tullio Buzzi      | Prato      |
+| Alessandro Ajroldi & Daniele Meroni     | Liceo Volta           | Como       |
+| Matteo Mariani & Mattia Zampi           | I.I.S. G. Marconi     | Latina     |
+| Luigi Bordignon & Massimo Casale        | I.I.S. G. Marconi     | Latina     |
+| Tommaso Accesi & Tommaso Nencini        | Liceo Ulisse Dini     | Pisa       |
+| Andrea Nanni & Daniele De Angelis       | Liceo Ulisse Dini     | Pisa       |
+| Mattia Trevisani & Edoardo Forsi        | ITIS Marconi          | Pontedera  |
+| Iacopo Viale & Giordano Di Bugno        | Liceo F. Buonarroti   | Pisa       |
+| Lorenzo Bellina & Leonardo Lenzi        | ITS Tullio Buzzi      | Prato      |
+| Francesco Scarvaci & Riccardo Terlizzi  | Liceo Cannizzaro      | Roma       |
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo26">
+  <embed
+    src="assets/cup/texts/26.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
+
+<h3 class="edition" id="edition24">Edizione 25</h3>
+<p class="year">2022</p>
+
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica25">Graduatoria</a>
+  <a class="item" data-tab="testo25">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica25" markdown="1">
+
+
+| Partecipanti | Istituzione | |
+| --- | --- | --- |
+| Valerio Stancanelli, Federico Volpe  | Liceo scientifico Ulisse Dini          | Pisa      |
+| Ettore Franchi, Matteo Vannini | ITS Tullio Buzzi                             | Prato     |
+| Riccardo Mancino, Flavio Massimiliano Ricci | Liceo Scientifico G.B. Grassi   | Latina    |
+| Tommaso Maestri Accesi, Daria Pasqualetti | Liceo scientifico Ulisse Dini     | Pisa      |
+| Daniele De Angelis, Andrea Nanni | Liceo scientifico Ulisse Dini              | Pisa      |
+| Alessandro Ajroldi, Edoardo Perri | Liceo Volta                               | Como      |
+| Michelangelo Pucci, Luca Giannini | Polo Tecnologico "Fermi - Giorgi"         | Lucca     |
+| Marco Forresu, Elisa Ciancio | Liceo F. Buonarroti                            | Pisa      |
+| Fanar Dawood, Damiano Tarini | Liceo F. Buonarroti                            | Pisa      |
+| Fabio Tomei, Edoardo Sperlonga | IIS Marconi                                  | Latina    |
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo25">
+  Presenti testo gara e preselezione.
+
+
+  <embed
+    src="assets/cup/texts/25_0.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+
+  <embed
+    src="assets/cup/texts/25_1.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
+
+<h3 class="edition" id="edition24">Edizione 24 - International edition</h3>
+<p class="year">2021</p>
+
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica23">Graduatoria</a>
+  <a class="item" data-tab="testo24">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica24" markdown="1">
+
+
+| Partecipanti | Istituzione | |
+| --- | --- | --- |
+| Stancanelli Valerio & Pasqualetti Daria | Liceo Ulisse Dini Pisa                                      | Italia      |  
+| Del Granchio Jacopo & Petrucci Matilde |  ITS Tullio Buzzi Pra                                        | Itala       | 
+| Vyacheslav Ivanov & Ruslan Voyt | Lomosonov Moscow State High School                                  | Russia      |  
+| Zhibai Jia & Yufan Chen | Shangai Huayu Private Middle School/Shangai Starriver Bilingual School      | China       | 
+| Samuel Reque & Nabil Aldihni | Swans International Schools                                            | Spagna      |  
+| Pengcheng Liu & Yiyou Cheng | IShangai Min Li High School/Shangai Tianlin No.3 Middle School          | China       | 
+| Rayhaneh Einollahi & Bahareh Einollahi | International Avicenna Research Centre                       | Iran        |
+| Vasiliy Parnikov | Republican Lyceum - Andrey Kuzmin                                                  | Russia      |  
+| Andrii Dikhtiar & Mykhailo Gavura | Lizeum "Naukova zmina" -                                             | Ucraina     |   
+| Rafael Oliveira & Rodrigo Miranda Martins | Agrupamento de Escolas Dr. Serafim Leite                 | Portogallo  |      
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo24">
+  <embed
+    src="assets/cup/texts/24.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
 
 <h3 class="edition" id="edition23">Edizione 23</h3>
 <p class="year">2019</p>
