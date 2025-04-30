@@ -5,7 +5,6 @@ author: Alessio Conte
 excerpt_image: assets/images/banners/turing_city.jpeg
 tags:
   - info
-top: 1
 sidebar: []
 ---
 
@@ -24,7 +23,7 @@ Si decise quindi di lanciare l’iniziativa di una gara per studenti di scuole m
 
 La prima edizione della gara si rivelò un successo, e ci fu subito interesse nelle scuole della toscana per la partecipazione, sicuramente per i premi in palio, ma soprattutto per la natura particolare della gara: era infatti la prima competizione che consentiva ai docenti delle scuole superiori di introdurre fondamenti dell’informatica e non solo applicazioni tecniche legate a sistemi o particolari linguaggi di programmazione. Nelle edizioni successive della gara vi fu una partecipazione sempre più ampia fino a quando la gara non ha assunto carattere nazionale. Numerose scuole hanno addirittura introdotto nei curricula lo studio delle macchine di Turing, elemento sicuramente innovativo nella tradizione dell’insegnamento informatico nelle scuole superiori.
 
-La fama della gara è cresciuta nel tempo al punto tale che il Ministero della Pubblica Istruzione ha deciso di inserirla tra le gare che sono considerate per stabilire l’eccellenza degli studenti delle scuole superiori sul territorio nazionale (http://www.pubblica.istruzione.it/normativa/2008/allegati/all_cm57.pdf) che nell’area scientifica tecnologica si limita a 19 iniziative.
+La fama della gara è cresciuta nel tempo al punto tale che il Ministero della Pubblica Istruzione ha deciso di inserirla tra le gare che sono considerate per stabilire l’eccellenza degli studenti delle scuole superiori sul territorio nazionale che nell’area scientifica tecnologica si limita a 19 iniziative.
 
  
 
@@ -35,4 +34,4 @@ Dott. Antonio Cisternino
  
 ## Ringraziamenti
 
-È lunga la lista delle persone che in questi tredici anni hanno sostenuto la gara col loro impegno, le giurie che hanno preparato i testi, il Prof. Roberto Grossi che ha diretto la gara per lunghi anni, Laura Redini elemento prezioso per l’organizzazione, e il Dott. Vincenzo Gervasi che ha condiviso con me tante ore per la correzione e la preparazione dei tesi.
+È lunga la lista delle persone che in questi tredici anni hanno sostenuto la gara col loro impegno, le giurie che hanno preparato i testi, il Prof. Roberto Grossi che ha diretto la gara per lunghi anni, Laura Redini elemento prezioso per l’organizzazione, e il Prof. Vincenzo Gervasi che ha condiviso con me tante ore per la correzione e la preparazione dei testi.

@@ -16,8 +16,8 @@ title: The Cup
 
 ## The Turing Cup
 
-La Turing Cup e' una competizione annuale di programmazione rivolta a studenti di tutta Italia.
-La competizione e' giunta alla sua 24esima edizione.
+La Turing Cup è una competizione annuale di programmazione rivolta a studenti di tutta Italia.
+La competizione è giunta alla sua 28esima edizione.
 
 Edizioni passate disponibili sul [nostro archivio](#past-editions).
 
@@ -25,25 +25,24 @@ Edizioni passate disponibili sul [nostro archivio](#past-editions).
 ## Rules
 
 1. **Obiettivo della gara.** La gara di Macchine di Turing per studenti delle scuole superiori (nel seguito denominata semplicemente "la gara") è organizzata dal Dipartimento di Informatica dell'Università di Pisa con l'obiettivo di avvicinare gli studenti delle scuole superiori alla Scienza dei Calcolatori, offrendo loro una opportunità di dimostrare e sviluppare le proprie capacità informatiche di soluzione dei problemi.
-La gara è una competizione tra squadre che rappresentano scuole medie superiori che si svolgerà nell'ambito della Settimana della Cultura Scientifica e Tecnologica.
+La gara è una competizione tra squadre che rappresentano scuole medie superiori.
 
 2. **Giuria della gara.** La giuria della gara ha il compito d'interpretare le regole generali per lo svolgimento della gara e di regolamentare eventuali situazioni impreviste.
 
 4. **Svolgimento della gara.** La gara si svolgerà presso il Polo Didattico Fibonacci dell'Università di Pisa, Largo Bruno Pontecorvo 3, Pisa.
-La data sarà quella che è pubblicata sul sito  http://mdt.di.unipi.it/ e avrà inizio alle ore 10:00.
+La data e orario della gara sarà pubblicata sul sito.
 La durata della gara è di 3 ore.
-Possono partecipare alla gara solo le squadre la cui domanda d'iscrizione sia stata accettata. Le squadre iscritte alla gara dovranno presentarsi entro le ore 9 del giorno di svolgimento della gara presso il Polo Didattico Fibonacci dell'Università di Pisa per adempiere le formalità richieste dalla gara.
+
+
 Le squadre partecipanti alla gara saranno poste di fronte ad un numero di problemi che dovranno essere risolti programmando le macchine di Turing. Ogni squadra potrà utilizzare un calcolatore per realizzare le soluzioni dei problemi posti mediante un programma simulatore di macchine di Turing.
-I partecipanti possono portare con sé libri, manuali ed appunti. I partecipanti non possono portare con sé dischetti né altro materiale leggibile da un calcolatore. I partecipanti non possono conversare con nessuno tranne che con l'altro membro della squadra e con il personale designato dalla giuria a fornire supporto sistemistico su problemi inerenti il sistema. Una squadra può essere squalificata dalla giuria per attività che possa disturbare lo svolgimento della gara, per esempio mediante comportamenti che arrechino disturbo alle altre squadre.
+I partecipanti possono portare con sé libri, manuali ed appunti. I partecipanti non possono portare con sé materiale leggibile da un calcolatore. I partecipanti non possono conversare con nessuno tranne che con l'altro membro della squadra e con il personale designato dalla giuria a fornire supporto sistemistico su problemi inerenti il sistema. Una squadra può essere squalificata dalla giuria per attività che possa disturbare lo svolgimento della gara, per esempio mediante comportamenti che arrechino disturbo alle altre squadre.
 La giuria potrà modificare la durata e la data stabilita della gara in caso di difficoltà impreviste avvisando tempestivamente i partecipanti. 
 
 5. **Risultati della gara.** La giuria della gara ha il compito di determinare la correttezza delle soluzioni proposte dalle squadre e determinare i vincitori della gara. Il giudizio della giuria è insindacabile.
 Le squadre saranno classificate al termine della gara in base alla somma dei punteggi attribuiti ai problemi risolti correttamente. Le squadre che avranno conseguito lo stesso punteggio saranno classificate in base al minor tempo impiegato (registrato come l'ora dell'ultimo salvataggio di una soluzione effettuato sul server).
 Saranno redatte due classifiche, una classifica delle squadre ottenuta secondo quanto stabilito al punto 5.2, e una classifica delle scuole ottenuta sommando i punteggi realizzati dalle squadre afferenti agli istituti partecipanti e ordinando in base al punteggio totale e all'ora dell'ultimo salvataggio in caso di pari punteggio.
 
-6. **Premi.** Alle prime squadre classificate potranno venire offerti premi da sponsor esterni. Il Dipartimento di Informatica non è responsabile per la mancata consegna degli eventuali premi da parte degli sponsor.
-
- 
+6. **Premi.** Gli sponsor della gara offrono premi alle prime squadre qualificate. Il Dipartimento di Informatica non è responsabile per la mancata consegna degli eventuali premi da parte degli sponsor.
 
 
 ## Registration
@@ -51,13 +50,14 @@ Saranno redatte due classifiche, una classifica delle squadre ottenuta secondo q
 - **Partecipanti.** Possono partecipare alla gara tutti gli studenti iscritti regolarmente alle scuole superiori (Scuola Secondaria) senza vincoli di età.
 Ogni scuola può richiedere l'iscrizione di più squadre, ogni squadra è composta da 2 studenti, ma ne possono concorrere al massimo 2.
 - **Costo.** L’iscrizione è gratuita.
-- **Iscrizione.** Le domande di iscrizione devono pervenire esclusivamente via mail all'indirizzo: [l.capuano@di.unipi.it](mailto:l.capuano@di.unipi.it) entro le ore 24 del giorno di chiusura iscrizioni.
-Le domande devono contenere il nome e l'indirizzo completo della scuola, il numero di squadre per cui si richiede l'iscrizione e il nome del docente o dei docenti che coordinano la partecipazione della scuola alla gara.
-- **Accettazione iscrizioni.** L'accettazione delle domande di iscrizione è a insindacabile giudizio della giuria. Per consentire la partecipazione del maggior numero possibile di squadre, le domande di iscrizione pervenute entro la scadenza stabilita saranno accettate secondo il seguente criterio. Sarà accettata l'iscrizione di una squadra per scuola, seguendo l'ordine con cui le domande di iscrizione saranno pervenute al Dipartimento di Informatica, fino a quando tutti i posti disponibili saranno stati assegnati. Nel caso esistano ulteriori posti disponibili, a discrezione della giuria si procederà o meno all'iscrizione di una ulteriore squadra per scuola secondo l'ordine suddetto, nel caso che la scuola abbia richiesto l'iscrizione di più squadre, e così via. Si considereranno comunque in concorso solo le prime due squadre iscritte alla gara per ogni scuola.
+- **Iscrizione.** Le domande di iscrizione devono pervenire esclusivamente via mail all'indirizzo: [luigi.capuano@unipi.it](mailto:l.capuano@unipi.it) entro le ore 24 del giorno di chiusura iscrizioni.
+Istruzioni sulla pagina dedicata all'edizione corrente.
+- **Accettazione iscrizioni.** L'accettazione delle domande di iscrizione è a insindacabile giudizio della giuria. Per consentire la partecipazione del maggior numero possibile di squadre, le domande di iscrizione pervenute entro la scadenza stabilita saranno accettate secondo il seguente criterio. Sarà accettata l'iscrizione di una squadra per scuola, seguendo l'ordine con cui le domande di iscrizione saranno pervenute al Dipartimento di Informatica, fino a quando tutti i posti disponibili saranno stati assegnati. Nel caso esistano ulteriori posti disponibili, a discrezione della giuria si procederà o meno all'iscrizione di una ulteriore squadra per scuola secondo l'ordine suddetto, nel caso che la scuola abbia richiesto l'iscrizione di più squadre, e così via. Maggiori informazioni sulla pagina dedicata all'edizione corrente.
+
 
 ## Sponsors
 
-La Cup e' sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galilei, che forniscono 10 immatricolazioni gratuite a qualunque corso di studio dell'Università (delibera n.135/6 del Consiglio di Amministrazione, 6 Aprile 2004), supporto organizzativo, e buoni premio per acquisto di materiale didattico per gli studenti e le scuole.
+La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galilei, che forniscono 10 immatricolazioni gratuite a qualunque corso di studio dell'Università (delibera n.135/6 del Consiglio di Amministrazione, 6 Aprile 2004), supporto organizzativo, e buoni premio per acquisto di materiale didattico per gli studenti e le scuole.
 
 <div class="ui tiny images">
   <img class="ui image" src="assets/images/rotary.png">
@@ -611,7 +611,7 @@ ovvero *k-h*.
 | Cocca Enrico e Fusco Matteo|  I.T.I.S. "E. Fermi"|  Lucca |
 | Buono Daniele e Signorini Marco|  I.T.I.S. "Galilei"|  Livorno |
 | Bruni Leonardo e Pianigiani Leonardo|  I.T.I. "G. Ferraris"|  San Giovanni Valdarno  |
-| Cardillo Davide e Petturiti Davide|  I.T.I.S. "Franchetti"|  Citta' di Castello  |
+| Cardillo Davide e Petturiti Davide|  I.T.I.S. "Franchetti"|  Città di Castello  |
 | Cocca Daniele e Zarrella Giovanni|  I.T.G.C. "G. Bruno"|  Ariano Irpino  |
 
 

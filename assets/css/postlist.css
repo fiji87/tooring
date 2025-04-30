@@ -23,6 +23,7 @@ div.articles ul.post-list span.post-badges span.post-badge.badge-top {
 
 /* badge new */
 div.articles ul.post-list span.post-badges span.post-badge.badge-new {
+    display: none;
     background-color: var(--frappe_yellow);
     color: var(--black);
 }
