@@ -570,9 +570,9 @@ Mostriamo ora alcuni esempi di utilizzo dei nuovi costrutti. Per ciascun esempio
 
 
 <table width="100%" cellpadding="4" cellspacing="3">
-<colgroup><col width="85*">
-<col width="85*">
-<col width="85*">
+<colgroup><col>
+<col>
+<col>
 </colgroup><thead>
 <tr valign="TOP">
 <th width="33%">
@@ -633,9 +633,9 @@ incrementare la cifra precedente (riporto).</font></p>
 **Palindrome.** Scrivere un programma per macchina di Turing che, ricevuta sul nastro una stringa sull'alfabeto a-z, lasci il nastro vuoto alla fine della computazione se e solo se la stringa originale era palindroma (si dicono palindrome le stringhe che si leggono identicamente da sinistra a destra o da destra verso sinistra, per esempio "ailatiditalia" o "satorrotas").
 
 <table width="100%" cellpadding="4" cellspacing="3">
-<colgroup><col width="85*">
-<col width="85*">
-<col width="85*">
+<colgroup><col>
+<col>
+<col>
 </colgroup><thead>
 <tr valign="TOP">
 <th width="33%">
