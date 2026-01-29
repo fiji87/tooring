@@ -1,0 +1,18 @@
+current directory: /mnt/linuxdata/projects/turing/.bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+/usr/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /mnt/linuxdata/projects/turing/.bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-2198594-rdyd2d sitelibdir\=./.gem.20260129-2198594-rdyd2d clean
+
+current directory: /mnt/linuxdata/projects/turing/.bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-2198594-rdyd2d sitelibdir\=./.gem.20260129-2198594-rdyd2d
+compiling cparse.c
+linking shared-object racc/cparse.so
+
+current directory: /mnt/linuxdata/projects/turing/.bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make -j17 DESTDIR\= sitearchdir\=./.gem.20260129-2198594-rdyd2d sitelibdir\=./.gem.20260129-2198594-rdyd2d install
+/usr/bin/install -c -m 0755 cparse.so ./.gem.20260129-2198594-rdyd2d/racc
+
+current directory: /mnt/linuxdata/projects/turing/.bundle/ruby/3.4.0/gems/racc-1.8.1/ext/racc/cparse
+make DESTDIR\= sitearchdir\=./.gem.20260129-2198594-rdyd2d sitelibdir\=./.gem.20260129-2198594-rdyd2d clean

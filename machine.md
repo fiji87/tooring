@@ -296,6 +296,54 @@ allora la MdT si ferma e termina la sua computazione.
   </div>
 </div>
 
+### Funzioni avanzate
+
+Il Simulatore usato negli anni precedenti includeva già una forma di *abbreviazione sintattica*, consistente nel specificare una sequenza di caratteri anziché un carattere singolo nei campi della quintupla che indicano il carattere letto da nastro e quello scritto su nastro. Tale abbreviazione veniva poi espansa in un numero di regole pari alla lunghezza della sequenza di caratteri, come nell'esempio seguente:
+
+**Regola con abbreviazione.** `( stato1, ABCD, stato2, EFGH, > )`
+
+| Regole espanse |
+| - |
+| `( stato1, A, stato2, E, > )` |
+| `( stato1, B, stato2, F, > )` |
+| `( stato1, C, stato2, G, > )` |
+| `( stato1, D, stato2, H, > )` |
+
+La versione 2006 del Simulatore generalizza questo meccanismo, introducendo i concetti di classe di *simboli* e di *espansione* parallela.
+
+#### Classi di simboli
+
+Una classe di simboli è una abbreviazione sintattica che denota una sequenza di simboli compresi nell'alfabeto della macchina (con lo spazio primo elemento dell'alfabeto):
+
+```
+!\"#$%&\'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^-{|}
+```
+
+La denotazione è costituita da una coppia di parentesi quadre `[]` o graffe `{}`, contenenti uno o più simboli appartenenti alla sequenza, o il simbolo di intervallo (due volte punto) `s1..s2`, che indica tutti i simboli compresi fra `s1` e `s2` nell'alfabeto della macchina. Inoltre, se il primo carattere all'interno delle parentesi è un accento circonflesso `^` (in Inglese caret), si intende che la sequenza denotata è data dall'insieme complementare di quello indicato, ovvero comprende tutti i simboli non elencati all'interno delle parentesi. In questo caso, l'ordine della sequenza è quello naturale dell'alfabeto usato. Infine, il simbolo di barra inversa `\` (in Inglese backslash) indica che il successivo carattere deve essere inteso letteralmente: per esempio, `\]` denota il simbolo `]`, non l'eventuale parentesi di chiusura di una sequenza; `\-` denota il simbolo `-` e non lo spazio, ecc. Allo stesso modo, `\\` denota il simbolo `\`, che altrimenti non sarebbe esprimibile.
+
+NOTA: se si specificano pida quelle con parentesi. Questo fatto è importante per quanto riguarda l'espansione parallela discussa in seguito. La classe di caratteri senza parentesi è stata mantenuta per compatibilità con l'estensione precedente della macchina, ed è limitata solo alle componenti della regola differenti da uno stato.
+
+Gli esempi seguenti chiariscono la notazione usata per le classi di simboli:
+
+
+<!-- todo: add table -->
+
+| Abbreviazione | Sequenza di simboli corrispondente |
+| - | - |
+| `[abc]`         | `{a, b, c}` |
+| `[0..9]`        | `{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }` |
+| `[^aeiou]`      | qualunque simbolo tranne le vocali, nell'ordine naturale |
+| `[\[\]()]`      | `{ [, ], (, ) }` |
+| `[^+\-*/0..9]`  | qualunque simbolo tranne le cifre e i simboli delle quattro operazioni: `+, -, *, /`, nell'ordine naturale |
+| `[^+\-*/0..9]`  | `{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, a, b, c, d, e, f, +, - }` (cifre esadecimali con segno) |
+
+
+Le classi di simboli possono essere usate nei seguenti contesti:
+
+- per indicare uno stato iniziale o finale, nel qual caso può essere usato un prefisso e/o un postfisso che, unito a ciascuno dei simboli indicati dalla classe, genera il nome effettivo dello stato. Per esempio, lo stato indicato in maniera abbreviata con `letto[0..9]r` viene espanso nella sequenza di stati `{ letto0r, letto1r, letto2r, letto3r, letto4r, letto5r, letto6r, letto7r, letto8r, letto9r }`.
+- per indicare un simbolo letto o da scrivere, nel qual caso la classe fornisce direttamente la sequenza dei simboli indicati. Per esempio, `[0..9]` viene espanso nella lista di simboli `{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }` (analogamente a quanto possibile con la precedente notazione `0123456789`, che comunque rimane disponibile).
+- per indicare una direzione di movimento, nel qual caso la classe deve denotare una sequenza composta esclusivamente di simboli `>` e `<`. Per esempio, `[>>><]` viene espanso nella lista di direzioni `{ >, >, >, < }`.
+
 
 ## Simulatore di macchine di Turing
 
