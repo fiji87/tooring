@@ -373,6 +373,7 @@ Ciò consente di esprimere sinteticamente un grande numero di regole basate su p
 <td width="33%">
 <p><font face="Courier, monospace"><font size="2">( s, [0..3], q,
 [a..d], &gt; )</font></font></p>
+<br>
 <p>In questo caso, le
 due classi racchiuse fra parentesi quadre vengono espanse in
 parallelo; quando il simbolo letto è 0 (primo elemento di
@@ -382,14 +383,15 @@ parallelo; quando il simbolo letto è 0 (primo elemento di
 <td width="30%">
 <p><font face="Courier, monospace"><font size="2">[0..3] = 0, 1, 2,
 3</font></font></p>
+<br>
 <p><font face="Courier, monospace"><font size="2">[a..d] = a, b, c,
 d</font></font></p>
 </td>
 <td width="37%">
-<p><font face="Courier, monospace"><font size="2">(s, 0, q, a, &gt;)</font></font></p>
-<p><font face="Courier, monospace"><font size="2">(s, 1, q, b, &gt;)</font></font></p>
-<p><font face="Courier, monospace"><font size="2">(s, 2, q, c, &gt;)</font></font></p>
-<p><font face="Courier, monospace"><font size="2">(s, 3, q, d, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 0, q, a, &gt;)</font></font></p><br>
+<p><font face="Courier, monospace"><font size="2">(s, 1, q, b, &gt;)</font></font></p><br>
+<p><font face="Courier, monospace"><font size="2">(s, 2, q, c, &gt;)</font></font></p><br>
+<p><font face="Courier, monospace"><font size="2">(s, 3, q, d, &gt;)</font></font></p><br>
 <p><br>
 </p>
 </td>
@@ -408,34 +410,34 @@ allo stato riporto1.</p>
 </td>
 <td width="30%">
 <p><font face="Courier, monospace"><font size="2">[0..9] = 0, 1, 2,
-3, 4, 5, 6, 7, 8, 9</font></font></p>
+3, 4, 5, 6, 7, 8, 9</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">riporto[000000001]
 = riporto0, riporto0, riporto0, riporto0, riporto0, riporto0,
-riporto0, riporto0, riporto1</font></font></p>
+riporto0, riporto0, riporto1</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">[1..90] = 1, 2,
-3, 4, 5, 6, 7, 8, 9, 0</font></font></p>
+3, 4, 5, 6, 7, 8, 9, 0</font></font></p><br>
 </td>
 <td width="37%">
 <p><font face="Courier, monospace"><font size="2">(s, 0, riporto0,
-1, &gt;)</font></font></p>
+1, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 1, riporto0,
-2, &gt;)</font></font></p>
+2, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 2, riporto0,
-3, &gt;)</font></font></p>
+3, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 3, riporto0,
-4, &gt;)</font></font></p>
+4, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 4, riporto0,
-5, &gt;)</font></font></p>
+5, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 5, riporto0,
-6, &gt;)</font></font></p>
+6, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 6, riporto0,
-7, &gt;)</font></font></p>
+7, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 7, riporto0,
-8, &gt;)</font></font></p>
+8, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 8, riporto0,
-9, &gt;)</font></font></p>
+9, &gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(s, 9, riporto1,
-0, &gt;)</font></font></p>
+0, &gt;)</font></font></p><br>
 </td>
 </tr>
 <tr valign="TOP">
@@ -474,51 +476,51 @@ parentesi:</p>
 <p>Classi con parentesi
 quadre:</p>
 <p><font face="Courier, monospace"><font size="2">s[0..4] = s0, s1,
-s2, s3, s4</font></font></p>
+s2, s3, s4</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">r[0..4] = r0, r1,
-r2, r3, r4</font></font></p>
+r2, r3, r4</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">[a..d] = a, b, c,
-d</font></font></p>
+d</font></font></p><br>
 </td>
 <td width="37%">
 <p><font face="Courier, monospace"><font size="2">( s0, a, r0, a,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s0, b, r0, a,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s0, c, r0, a,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s0, d, r0, a,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><br><br>
 </p>
 <p><font face="Courier, monospace"><font size="2">( s1, a, r1, b,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s1, b, r1, b,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s1, c, r1, b,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s1, d, r1, b,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><br><br>
 </p>
 <p><font face="Courier, monospace"><font size="2">( s2, a, r2, c,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s2, b, r2, c,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s2, c, r2, c,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s2, d, r2, c,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><br><br>
 </p>
 <p><font face="Courier, monospace"><font size="2">( s3, a, r3, d,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s3, b, r3, d,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s3, c, r3, d,
-&lt;)</font></font></p>
+&lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">( s3, d, r3, d,
-&gt;)</font></font></p>
+&gt;)</font></font></p><br>
 </td>
 </tr>
 <tr valign="TOP">
@@ -539,24 +541,24 @@ rd_b</font></font></p>
 wr_b</font></font></p>
 <hr>
 <p><font size="2">Classi con parentesi graffe:</font></p>
-<p><font face="Courier, monospace"><font size="2">{012} = 0, 1, 2</font></font></p>
-<p><font face="Courier, monospace"><font size="2">{abc} = a, b, c</font></font></p>
+<p><font face="Courier, monospace"><font size="2">{012} = 0, 1, 2</font></font></p><br>
+<p><font face="Courier, monospace"><font size="2">{abc} = a, b, c</font></font></p><br>
 </td>
 <td width="37%">
 <p><font face="Courier, monospace"><font size="2">(rd_a, 0, wr_a,
-a, &lt;)</font></font></p>
+a, &lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(rd_a, 1, wr_a,
-b, &lt;)</font></font></p>
+b, &lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(rd_a, 2, wr_a,
-c, &lt;)</font></font></p>
+c, &lt;)</font></font></p><br>
 <p><br><br>
 </p>
 <p><font face="Courier, monospace"><font size="2">(rd_b, 0, wr_b,
-a, &lt;)</font></font></p>
+a, &lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(rd_b, 1, wr_b,
-b, &lt;)</font></font></p>
+b, &lt;)</font></font></p><br>
 <p><font face="Courier, monospace"><font size="2">(rd_b, 2, wr_b,
-c, &lt;)</font></font></p>
+c, &lt;)</font></font></p><br>
 </td>
 </tr>
 </tbody>
