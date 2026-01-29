@@ -80,14 +80,14 @@ La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 | --- | --- | --- |
 | Leonardo Giovanni Selbach, Leonardo Zeppieri | Liceo Scientifico "Vito Volterra" - Volterra 2 | Volterra |
 | Giulio Mannari & Dario Mariani | Liceo Scientifico “Ulisse Dini” - Dini 1 | Pisa |
-| Samuele Nigro & Giovanni Pierri | ITS “Tullio Buzzi” - Buzzi 1 | |
-| Elisa Bilotta & Daniele Tiburzi | Liceo Scientifico e Linguistico Paolo Giovio - Giovio 1   | |
+| Samuele Nigro & Giovanni Pierri | ITS “Tullio Buzzi” - Buzzi 1 | Prato |
+| Elisa Bilotta & Daniele Tiburzi | Liceo Scientifico e Linguistico Paolo Giovio - Giovio 1   | Como |
 | Cristian Lonigro & Davide Zema | Liceo scientifico “Ulisse Dini” - Dini 2 | Pisa |
-| Alessandro Gamberoni & Andrea Massetani | ITS “Tullio Buzzi” - Buzzi 2    | |
-| Matteo Petretti & Francesco Vellutini | Polo E. Fermi - Fermi 1 | Pisa |
-| Andrii Yerymovych & David Mereu - Davinci 1  | IIS Leonardo Da Vinci |
-| Riccardo Piredda & Michelle Martinez Bianchi - Belluzzi 1 | ITTS Belluzzi-da Vinci | |
-| Gregorio Pescucci & Dario Rossi - Manetti 1  | Polo Tecnologico Manetti Porciatti | |
+| Alessandro Gamberoni & Andrea Massetani | ITS “Tullio Buzzi” - Buzzi 2    | Prato |
+| Matteo Petretti & Francesco Vellutini | Polo E. Fermi G. Giorgi - Fermi 1 | Lucca |
+| Andrii Yerymovych & David Mereu - Davinci 1  | IIS Leonardo Da Vinci | Pisa |
+| Riccardo Piredda & Michelle Martinez Bianchi - Belluzzi 1 | ITTS Belluzzi-da Vinci | Rimini |
+| Gregorio Pescucci & Dario Rossi - Manetti 1  | Polo Tecnologico Manetti Porciatti | Grosseto |
 
 
 </div>
@@ -100,6 +100,7 @@ La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
     title="Testo"
   />
 </div>
+
 <h3 class="edition" id="edition26">Edizione 27</h3>
 <p class="year">2024</p>
 
