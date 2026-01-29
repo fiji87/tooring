@@ -352,9 +352,9 @@ Ciò consente di esprimere sinteticamente un grande numero di regole basate su p
 
 
 <table width="100%" cellpadding="4" cellspacing="3">
-<colgroup><col width="85*">
-<col width="76*">
-<col width="95*">
+<colgroup><col>
+<col>
+<col>
 </colgroup><thead>
 <tr valign="TOP">
 <th width="33%">
@@ -374,11 +374,7 @@ Ciò consente di esprimere sinteticamente un grande numero di regole basate su p
 <p><font face="Courier, monospace"><font size="2">( s, [0..3], q,
 [a..d], &gt; )</font></font></p>
 <br>
-<p>In questo caso, le
-due classi racchiuse fra parentesi quadre vengono espanse in
-parallelo; quando il simbolo letto è 0 (primo elemento di
-[0..3]), il simbolo scritto sarà a (primo elemento di
-[a..d]), e così via.</p>
+<p>In questo caso, le due classi racchiuse fra parentesi quadre vengono espanse in parallelo; quando il simbolo letto è 0 (primo elemento di [0..3]), il simbolo scritto sarà a (primo elemento di [a..d]), e così via.</p>
 </td>
 <td width="30%">
 <p><font face="Courier, monospace"><font size="2">[0..3] = 0, 1, 2,

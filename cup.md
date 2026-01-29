@@ -66,6 +66,40 @@ La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 
 ## Past editions
 
+<h3 class="edition" id="edition26">Edizione 28</h3>
+<p class="year">2025</p>
+
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica28">Graduatoria</a>
+  <a class="item" data-tab="testo28">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica28" markdown="1">
+
+
+| Partecipanti | Istituzione | |
+| --- | --- | --- |
+| Leonardo Giovanni Selbach, Leonardo Zeppieri | Liceo Scientifico "Vito Volterra" - Volterra 2 | Volterra |
+| Giulio Mannari & Dario Mariani | Liceo Scientifico “Ulisse Dini” - Dini 1 | Pisa |
+| Samuele Nigro & Giovanni Pierri | ITS “Tullio Buzzi” - Buzzi 1 | |
+| Elisa Bilotta & Daniele Tiburzi | Liceo Scientifico e Linguistico Paolo Giovio - Giovio 1   | |
+| Cristian Lonigro & Davide Zema | Liceo scientifico “Ulisse Dini” - Dini 2 | Pisa |
+| Alessandro Gamberoni & Andrea Massetani | ITS “Tullio Buzzi” - Buzzi 2    | |
+| Matteo Petretti & Francesco Vellutini | Polo E. Fermi - Fermi 1 | Pisa |
+| Andrii Yerymovych & David Mereu - Davinci 1  | IIS Leonardo Da Vinci |
+| Riccardo Piredda & Michelle Martinez Bianchi - Belluzzi 1 | ITTS Belluzzi-da Vinci | |
+| Gregorio Pescucci & Dario Rossi - Manetti 1  | Polo Tecnologico Manetti Porciatti | |
+
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo28">
+  <embed
+    src="assets/cup/texts/28.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
 <h3 class="edition" id="edition26">Edizione 27</h3>
 <p class="year">2024</p>
 
