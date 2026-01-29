@@ -569,7 +569,7 @@ Mostriamo ora alcuni esempi di utilizzo dei nuovi costrutti. Per ciascun esempio
 **Odometro.** Scrivere un programma per macchina di Turing che, ricevuto sul nastro una stringa di cifre decimali, lasci sul nastro al termine dell'esecuzione la stringa di cifre corrispondente al numero iniziale, incrementato di uno. Se il risultato supera il numero di cifre inizialmente presenti, il programma deve lasciare sul nastro una stringa di soli 0 (comportamento simile a quello dei normali contachilometri).
 
 
-<table width="100%" border="1" cellpadding="4" cellspacing="3">
+<table width="100%" cellpadding="4" cellspacing="3">
 <colgroup><col width="85*">
 <col width="85*">
 <col width="85*">
@@ -632,7 +632,7 @@ incrementare la cifra precedente (riporto).</font></p>
 
 **Palindrome.** Scrivere un programma per macchina di Turing che, ricevuta sul nastro una stringa sull'alfabeto a-z, lasci il nastro vuoto alla fine della computazione se e solo se la stringa originale era palindroma (si dicono palindrome le stringhe che si leggono identicamente da sinistra a destra o da destra verso sinistra, per esempio "ailatiditalia" o "satorrotas").
 
-<table width="100%" border="1" cellpadding="4" cellspacing="3">
+<table width="100%" cellpadding="4" cellspacing="3">
 <colgroup><col width="85*">
 <col width="85*">
 <col width="85*">
