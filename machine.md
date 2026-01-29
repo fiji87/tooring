@@ -344,6 +344,369 @@ Le classi di simboli possono essere usate nei seguenti contesti:
 - per indicare un simbolo letto o da scrivere, nel qual caso la classe fornisce direttamente la sequenza dei simboli indicati. Per esempio, `[0..9]` viene espanso nella lista di simboli `{ 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 }` (analogamente a quanto possibile con la precedente notazione `0123456789`, che comunque rimane disponibile).
 - per indicare una direzione di movimento, nel qual caso la classe deve denotare una sequenza composta esclusivamente di simboli `>` e `<`. Per esempio, `[>>><]` viene espanso nella lista di direzioni `{ >, >, >, < }`.
 
+#### Espansione parallela
+
+Abbiamo visto sopra che le classi di simboli possono essere delimitate da parentesi quadre `[]` o da parentesi graffe `{}`. In aggiunta, è possibile usare classi senza delimitatori, come per le vecchie sequenze del tipo `0123456789` (ora esprimibili anche con la sintassi abbreviata `0..9`). Al momento dell'espansione di una regola abbreviata in un insieme di regole base, i tre diversi gruppi di classi di simboli vengono espansi parallelamente: tutte le classi delimitate con lo stesso tipo di parentesi vengono espanse, per ogni regola, nei simboli che occupano la stessa posizione nella sequenza; classi delimitate da parentesi diverse vengono invece espanse indipendentemente (e in combinazione fra loro).
+
+Ciò consente di esprimere sinteticamente un grande numero di regole basate su prodotti cartesiani delle corrispondenti sequenze, come illustrato nei seguenti esempi:
+
+
+<table width="100%" cellpadding="4" cellspacing="3">
+<colgroup><col width="85*">
+<col width="76*">
+<col width="95*">
+</colgroup><thead>
+<tr valign="TOP">
+<th width="33%">
+<p><font size="2">Regola abbreviata</font></p>
+</th>
+<th width="30%">
+<p><font size="2">Espansione delle classi</font></p>
+</th>
+<th width="37%">
+<p><font size="2">Regole generate dall'espansione</font></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="TOP">
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">( s, [0..3], q,
+[a..d], &gt; )</font></font></p>
+<p>In questo caso, le
+due classi racchiuse fra parentesi quadre vengono espanse in
+parallelo; quando il simbolo letto è 0 (primo elemento di
+[0..3]), il simbolo scritto sarà a (primo elemento di
+[a..d]), e così via.</p>
+</td>
+<td width="30%">
+<p><font face="Courier, monospace"><font size="2">[0..3] = 0, 1, 2,
+3</font></font></p>
+<p><font face="Courier, monospace"><font size="2">[a..d] = a, b, c,
+d</font></font></p>
+</td>
+<td width="37%">
+<p><font face="Courier, monospace"><font size="2">(s, 0, q, a, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 1, q, b, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 2, q, c, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 3, q, d, &gt;)</font></font></p>
+<p><br>
+</p>
+</td>
+</tr>
+<tr valign="TOP">
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">( s, [0..9],
+riporto[000000001], [1..90], &gt; )</font></font></p>
+<p>Questa regola mostra
+come sia possibile legare il simbolo letto, quello scritto, e il
+nome dello stato finale tramite un'unica espansione. In questo
+caso, se viene letto un simbolo fra 0 e 8 viene scritto lo stesso
+simbolo aumentato di 1 (quindi, fra 1 e 9) e si va nello stato
+riporto0; se invece viene letto un 9, si scrive uno 0 e si passa
+allo stato riporto1.</p>
+</td>
+<td width="30%">
+<p><font face="Courier, monospace"><font size="2">[0..9] = 0, 1, 2,
+3, 4, 5, 6, 7, 8, 9</font></font></p>
+<p><font face="Courier, monospace"><font size="2">riporto[000000001]
+= riporto0, riporto0, riporto0, riporto0, riporto0, riporto0,
+riporto0, riporto0, riporto1</font></font></p>
+<p><font face="Courier, monospace"><font size="2">[1..90] = 1, 2,
+3, 4, 5, 6, 7, 8, 9, 0</font></font></p>
+</td>
+<td width="37%">
+<p><font face="Courier, monospace"><font size="2">(s, 0, riporto0,
+1, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 1, riporto0,
+2, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 2, riporto0,
+3, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 3, riporto0,
+4, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 4, riporto0,
+5, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 5, riporto0,
+6, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 6, riporto0,
+7, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 7, riporto0,
+8, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 8, riporto0,
+9, &gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(s, 9, riporto1,
+0, &gt;)</font></font></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">( s[0..4], a..d,
+r[0..4], [a..d], &lt;&gt;&lt;&gt;)</font></font></p>
+<p>In questa regola si
+fa uso di due gruppi di classi, uno senza parentesi e uno fra
+parentesi quadre. Ciascun gruppo si espande in sequenze di
+lunghezza 4, quindi verranno prodotte complessivamente 16 regole.
+Anche in questo caso, le classi corrispondenti vengono espanse in
+parallelo (il primo simbolo di ogni sequenza con il primo simbolo
+di tutte le altre sequenze che usano lo stesso delimitatore),
+mentre classi con delimitatori diversi vengono espanse
+indipendentemente.
+</p>
+<p>Nel nostro caso,
+tutte le volte che s[0..4] espande in s0, r[0..4] espanderà
+in r0 e [a..d] in a (primo simbolo di ciascuna sequenza); quando
+s[0..4] espande in s1, r[0..4] espanderà in r1 e [a..d] in
+b, ecc.
+</p>
+<p>In ciascuno di
+questi casi, a..d e &lt;&gt;&lt;&gt; espanderanno,
+rispettivamente, nel primo, secondo, terzo e quarto elemento
+della sequenza, rispettivamente. Il risultato finale sono le 16
+regole visibili accanto.</p>
+</td>
+<td width="30%">
+<p>Classi senza
+parentesi:</p>
+<p><font face="Courier, monospace"><font size="2">a..d = a, b, c, d</font></font></p>
+<p><font face="Courier, monospace"><font size="2">&lt;&gt;&lt;&gt;
+= &lt;, &gt;, &lt;, &gt;</font></font></p>
+<hr>
+<p>Classi con parentesi
+quadre:</p>
+<p><font face="Courier, monospace"><font size="2">s[0..4] = s0, s1,
+s2, s3, s4</font></font></p>
+<p><font face="Courier, monospace"><font size="2">r[0..4] = r0, r1,
+r2, r3, r4</font></font></p>
+<p><font face="Courier, monospace"><font size="2">[a..d] = a, b, c,
+d</font></font></p>
+</td>
+<td width="37%">
+<p><font face="Courier, monospace"><font size="2">( s0, a, r0, a,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s0, b, r0, a,
+&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s0, c, r0, a,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s0, d, r0, a,
+&gt;)</font></font></p>
+<p><br><br>
+</p>
+<p><font face="Courier, monospace"><font size="2">( s1, a, r1, b,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s1, b, r1, b,
+&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s1, c, r1, b,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s1, d, r1, b,
+&gt;)</font></font></p>
+<p><br><br>
+</p>
+<p><font face="Courier, monospace"><font size="2">( s2, a, r2, c,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s2, b, r2, c,
+&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s2, c, r2, c,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s2, d, r2, c,
+&gt;)</font></font></p>
+<p><br><br>
+</p>
+<p><font face="Courier, monospace"><font size="2">( s3, a, r3, d,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s3, b, r3, d,
+&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s3, c, r3, d,
+&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">( s3, d, r3, d,
+&gt;)</font></font></p>
+</td>
+</tr>
+<tr valign="TOP">
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">(rd_[ab], {012},
+wr_[ab], {abc}, &lt;)</font></font></p>
+<p>Anche in questo caso
+vengono usati due gruppi di classi, quelle delimitate da [] e
+quelle delimitate da {}. Come visto in precedenza, i due gruppi
+vengono espansi in parallelo; verranno quindi generate in totale
+6 regole.</p>
+</td>
+<td width="30%">
+<p><font size="2">Classi con parentesi quadre:</font></p>
+<p><font face="Courier, monospace"><font size="2">rd_[ab] = rd_a,
+rd_b</font></font></p>
+<p><font face="Courier, monospace"><font size="2">wr_[ab] = wr_a,
+wr_b</font></font></p>
+<hr>
+<p><font size="2">Classi con parentesi graffe:</font></p>
+<p><font face="Courier, monospace"><font size="2">{012} = 0, 1, 2</font></font></p>
+<p><font face="Courier, monospace"><font size="2">{abc} = a, b, c</font></font></p>
+</td>
+<td width="37%">
+<p><font face="Courier, monospace"><font size="2">(rd_a, 0, wr_a,
+a, &lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(rd_a, 1, wr_a,
+b, &lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(rd_a, 2, wr_a,
+c, &lt;)</font></font></p>
+<p><br><br>
+</p>
+<p><font face="Courier, monospace"><font size="2">(rd_b, 0, wr_b,
+a, &lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(rd_b, 1, wr_b,
+b, &lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(rd_b, 2, wr_b,
+c, &lt;)</font></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+##### Alcuni esempi
+Mostriamo ora alcuni esempi di utilizzo dei nuovi costrutti. Per ciascun esempio, sono indicate il testo del problema che viene risolto, una versione della soluzione usando la sintassi tradizionale, una versione con la nuova sintassi, e l'espansione delle regole con la nuova sintassi.
+
+**Odometro.** Scrivere un programma per macchina di Turing che, ricevuto sul nastro una stringa di cifre decimali, lasci sul nastro al termine dell'esecuzione la stringa di cifre corrispondente al numero iniziale, incrementato di uno. Se il risultato supera il numero di cifre inizialmente presenti, il programma deve lasciare sul nastro una stringa di soli 0 (comportamento simile a quello dei normali contachilometri).
+
+
+<table width="100%" border="1" cellpadding="4" cellspacing="3">
+<colgroup><col width="85*">
+<col width="85*">
+<col width="85*">
+</colgroup><thead>
+<tr valign="TOP">
+<th width="33%">
+<p><font size="2">Strategia di soluzione</font></p>
+</th>
+<th width="33%">
+<p><font size="2">Versione abbreviata</font></p>
+</th>
+<th width="33%">
+<p><font size="2">Versione espansa</font></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="TOP">
+<td width="33%">
+<p><font size="2">Dapprima (stato 0) ci si posiziona sull'ultima
+cifra a destra del numero; quindi (stato 1) si incrementa la
+cifra corrente. Se la cifra era compresa fra 0 e 8, viene fatto
+l'incremento e l'esecuzione termina. Se invece la cifra corrente
+era 9, viene scritto al suo posto uno 0 e si passa a
+incrementare la cifra precedente (riporto).</font></p>
+</td>
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">(0,[0..9],0,[0..9],&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,-,1,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,[0..8],FINE,[1..9],&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,9,1,0,&lt;)</font></font></p>
+</td>
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">(0,0,0,0,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,1,0,1,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,2,0,2,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,3,0,3,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,4,0,4,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,5,0,5,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,6,0,6,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,7,0,7,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,8,0,8,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,9,0,9,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,-,1,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,0,FINE,1,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,1,FINE,2,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,2,FINE,3,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,3,FINE,4,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,4,FINE,5,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,5,FINE,6,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,6,FINE,7,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,7,FINE,8,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,8,FINE,9,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(1,9,1,0,&lt;)</font></font></p>
+</td>
+</tr>
+</tbody>
+</table>
+
+
+**Palindrome.** Scrivere un programma per macchina di Turing che, ricevuta sul nastro una stringa sull'alfabeto a-z, lasci il nastro vuoto alla fine della computazione se e solo se la stringa originale era palindroma (si dicono palindrome le stringhe che si leggono identicamente da sinistra a destra o da destra verso sinistra, per esempio "ailatiditalia" o "satorrotas").
+
+<table width="100%" border="1" cellpadding="4" cellspacing="3">
+<colgroup><col width="85*">
+<col width="85*">
+<col width="85*">
+</colgroup><thead>
+<tr valign="TOP">
+<th width="33%">
+<p><font size="2">Strategia di soluzione</font></p>
+</th>
+<th width="33%">
+<p><font size="2">Versione abbreviata</font></p>
+</th>
+<th width="33%">
+<p><font size="2">Versione espansa</font></p>
+</th>
+</tr>
+</thead>
+<tbody>
+<tr valign="TOP">
+<td width="33%">
+<p><font size="2">Posizionati sul primo carattere a sinistra della
+stringa, lo cancelliamo, memorizziamo nel nome dello stato il
+carattere letto, passando nello stato <font face="Courier, monospace">lettoa</font>
+(se abbiamo letto una <font face="Courier, monospace">a</font>)
+fino a <font face="Courier, monospace">lettoz</font> (se abbiamo
+letto una <font face="Courier, monospace">z</font>). Quindi
+scorriamo tutta la stringa, mantenendo memoria nello stato di
+quale carattere avevamo letto, e riscrivendo sempre il carattere
+letto. Arrivati in fondo alla stringa, ci spostiamo di una cella
+a destra (sempre mantenendo il carattere letto originalmente
+nello stato), e verifichiamo di trovare all'estremità
+sinistra della stringa lo stesso carattere che avevamo letto a
+destra. In caso positivo, si cancella il carattere e si ritorna
+in cima alla stringa, ripetendo poi l'algoritmo (fino a
+consumare tutta la stringa); in caso negativo si interrompe il
+calcolo, lasciando sul nastro la parte di stringa non
+palindroma.</font></p>
+</td>
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">(0,[a..z],letto[a..z],-,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(letto[a..z],{a..z},letto[a..z],{a..z},&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(letto[a..z],-,destra[a..z],-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(destra[a..z],[a..z],ritorno,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(ritorno,[a..z],ritorno,[a..z],&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(ritorno,-,0,-,&gt;)</font></font></p>
+</td>
+<td width="33%">
+<p><font face="Courier, monospace"><font size="2">(0,a,lettoa,-,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(0,z,lettoz,-,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoa,a,lettoa,a,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoa,b,lettoa,b,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoa,z,lettoa,z,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettob,a,lettob,a,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettob,z,lettob,z,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoz,a,lettoz,a,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoz,z,lettoz,z,&gt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoa,-,destraa,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(lettoz,-,destraz,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(destraa,a,ritorno,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(destraz,z,ritorno,-,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(ritorno,a,ritorno,a,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">...</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(ritorno,z,ritorno,z,&lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2">(ritorno,-,0,-,&gt;)</font></font></p>
+</td>
+</tr>
+</tbody>
+</table>
 
 ## Simulatore di macchine di Turing
 

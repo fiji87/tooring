@@ -1,7 +1,3 @@
-# frozen_string_literal: true
-
+# frozen_string_listeral: true
 source "https://rubygems.org"
 gemspec
-
-gem "jekyll-commonmark"
-gem "json"
