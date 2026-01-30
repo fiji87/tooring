@@ -460,7 +460,7 @@ regole visibili accanto.</p>
 <hr>
 <br>
 <p>Classi con parentesi quadre:</p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">s[0..4] = s0, s1, s2, s3, s4</code></font></font></p><br>
+<code class="language-plaintext highlighter-rouge">s[0..4] = s0, s1, s2, s3, s4</code><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">r[0..4] = r0, r1, r2, r3, r4</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[a..d] = a, b, c, d</code></font></font></p><br>
 </td>
@@ -557,10 +557,10 @@ era 9, viene scritto al suo posto uno 0 e si passa a
 incrementare la cifra precedente (riporto).</font></p>
 </td>
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,[0..9],0,[0..9],&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,-,1,-,&lt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,[0..8],FINE,[1..9],&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,9,1,0,&lt;)</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,[0..9],0,[0..9],&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,-,1,-,&lt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,[0..8],FINE,[1..9],&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,9,1,0,&lt;)</code></font></font></p><br>
 </td>
 <td width="33%">
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,0,0,0,&gt;)</code></font></font></p><br>
