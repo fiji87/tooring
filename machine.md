@@ -455,7 +455,13 @@ regole visibili accanto.</p>
 </td>
 <td width="30%">
 <p>Classi senza parentesi<br><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">a..d = a, b, c, d</code></font></font></p><br>
+<p markdown="1">
+
+
+a..d = a, b, c, d
+
+
+</p><br>
 <code class="language-plaintext highlighter-rouge"> a..d = a, b, c, d </code><br>
 <code class="language-plaintext highlighter-rouge"> &lt;&gt;&lt;&gt; = &lt;, &gt;, &lt;, &gt;</code><br>
 </p>
