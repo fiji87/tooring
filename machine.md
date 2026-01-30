@@ -491,7 +491,7 @@ regole visibili accanto.</p>
 </tr>
 <tr valign="TOP">
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_[ab], {012}, wr_[ab], {abc}, &lt;)</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_[ab], {012}, wr_[ab], {abc}, &lt;)</code></font></font></p><br><br>
 <p>Anche in questo caso
 vengono usati due gruppi di classi, quelle delimitate da [] e
 quelle delimitate da {}. Come visto in precedenza, i due gruppi
@@ -500,8 +500,8 @@ vengono espansi in parallelo; verranno quindi generate in totale
 </td>
 <td width="30%">
 <p><font size="2">Classi con parentesi quadre:</font></p><br><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code></font></font></p><br><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code></font></font></p><br><br>
+<code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code><br>
+<code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code><br><br>
 <hr>
 <br>
 <p><font size="2">Classi con parentesi graffe:</font></p><br>
