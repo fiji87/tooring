@@ -14,6 +14,13 @@ title: La macchina
     });
 </script>
 
+<style>
+	/* fix color for even rows, as gray hides code blocks */
+	table tr:nth-child(2n) {
+		background-color: none;
+	}
+</style>
+
 # La Macchina di Turing
 
 Molti testi di informatica contengono una descrizione delle macchine di Turing, inserita di solito nel contesto della teoria della calcolabilità, della complessità o della teoria degli automi. Da un punto di vista didattico, le macchine di Turing non vengono di solito utilizzate come primo formalismo per introdurre la scienza dei calcolatori.
@@ -457,9 +464,8 @@ della sequenza, rispettivamente. Il risultato finale sono le 16
 regole visibili accanto.</p>
 </td>
 <td width="30%">
-<p>Classi senza
-parentesi:</p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">a..d = a, b, c, d</code></font></font></p>
+<p>Classi senza parentesi:</p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge"> a..d = a, b, c, d </code></font></font></p>
 <p><font face="Courier, monospace"><font size="2">&lt;&gt;&lt;&gt;
 = &lt;, &gt;, &lt;, &gt;</font></font></p>
 <hr>
@@ -567,27 +573,27 @@ incrementare la cifra precedente (riporto).</font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,9,1,0,&lt;)</code></font></font></p>
 </td>
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,0,0,0,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,1,0,1,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,2,0,2,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,3,0,3,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,4,0,4,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,5,0,5,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,6,0,6,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,7,0,7,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,8,0,8,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,9,0,9,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,-,1,-,&lt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,0,FINE,1,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,1,FINE,2,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,2,FINE,3,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,3,FINE,4,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,4,FINE,5,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,5,FINE,6,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,6,FINE,7,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,7,FINE,8,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,8,FINE,9,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,9,1,0,&lt;)</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,0,0,0,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,1,0,1,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,2,0,2,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,3,0,3,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,4,0,4,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,5,0,5,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,6,0,6,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,7,0,7,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,8,0,8,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,9,0,9,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,-,1,-,&lt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,0,FINE,1,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,1,FINE,2,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,2,FINE,3,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,3,FINE,4,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,4,FINE,5,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,5,FINE,6,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,6,FINE,7,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,7,FINE,8,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,8,FINE,9,&gt;)</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,9,1,0,&lt;)</code></font></font></p><br>
 </td>
 </tr>
 </tbody>
@@ -644,27 +650,27 @@ palindroma.</font></p>
 </td>
 <td width="33%">
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,a,lettoa,-,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,z,lettoz,-,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoa,a,lettoa,a,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoa,b,lettoa,b,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoa,z,lettoa,z,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettob,a,lettob,a,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettob,z,lettob,z,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoz,a,lettoz,a,&gt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoz,z,lettoz,z,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoa,-,destraa,-,&lt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoz,-,destraz,-,&lt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(destraa,a,ritorno,-,&lt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(destraz,z,ritorno,-,&lt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(ritorno,a,ritorno,a,&lt;)</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(ritorno,z,ritorno,z,&lt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(ritorno,-,0,-,&gt;)</code></font></font></p>
 </td>
