@@ -1793,8 +1793,8 @@ RSpec.describe "bundle install with specific platforms" do
 
   it "does not remove platform specific gems from lockfile when using a ruby version that does not match their ruby requirements, since they may be useful in other rubies" do
     build_repo4 do
-      build_gem("google-protobuf", "3.25.5")
-      build_gem("google-protobuf", "3.25.5") do |s|
+      build_gem("google-protobuf", "4.33.5")
+      build_gem("google-protobuf", "4.33.5") do |s|
         s.required_ruby_version = "< #{current_ruby_minor}.dev"
         s.platform = "x86_64-linux"
       end

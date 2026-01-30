@@ -1269,11 +1269,11 @@ RSpec.describe "the lockfile format" do
   it "adds compatible platform specific variants to the lockfile, even if resolution fallback to ruby due to some other incompatible platform specific variant" do
     simulate_platform "arm64-darwin-23" do
       build_repo4 do
-        build_gem "google-protobuf", "3.25.1"
-        build_gem "google-protobuf", "3.25.1" do |s|
+        build_gem "google-protobuf", "4.33.0"
+        build_gem "google-protobuf", "4.33.0" do |s|
           s.platform = "arm64-darwin-23"
         end
-        build_gem "google-protobuf", "3.25.1" do |s|
+        build_gem "google-protobuf", "4.33.0" do |s|
           s.platform = "x64-mingw-ucrt"
           s.required_ruby_version = "> #{Gem.ruby_version}"
         end
@@ -1286,16 +1286,16 @@ RSpec.describe "the lockfile format" do
       bundle "lock --add-platform x64-mingw-ucrt"
 
       checksums = checksums_section_when_enabled do |c|
-        c.checksum gem_repo4, "google-protobuf", "3.25.1"
-        c.checksum gem_repo4, "google-protobuf", "3.25.1", "arm64-darwin-23"
+        c.checksum gem_repo4, "google-protobuf", "4.33.0"
+        c.checksum gem_repo4, "google-protobuf", "4.33.0", "arm64-darwin-23"
       end
 
       expect(lockfile).to eq <<~L
         GEM
           remote: https://gem.repo4/
           specs:
-            google-protobuf (3.25.1)
-            google-protobuf (3.25.1-arm64-darwin-23)
+            google-protobuf (4.33.0)
+            google-protobuf (4.33.0-arm64-darwin-23)
 
         PLATFORMS
           arm64-darwin-23
