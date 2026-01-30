@@ -371,8 +371,8 @@ Ciò consente di esprimere sinteticamente un grande numero di regole basate su p
 <tbody>
 <tr valign="TOP">
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2">( s, [0..3], q,
-[a..d], &gt; )</font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s, [0..3], q,
+[a..d], &gt; )<code class="language-plaintext highlighter-rouge"></font></font></p>
 <br>
 <p>In questo caso, le due classi racchiuse fra parentesi quadre vengono espanse in parallelo; quando il simbolo letto è 0 (primo elemento di [0..3]), il simbolo scritto sarà a (primo elemento di [a..d]), e così via.</p>
 </td>
