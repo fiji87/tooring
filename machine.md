@@ -358,7 +358,7 @@ Abbiamo visto sopra che le classi di simboli possono essere delimitate da parent
 Ciò consente di esprimere sinteticamente un grande numero di regole basate su prodotti cartesiani delle corrispondenti sequenze, come illustrato nei seguenti esempi:
 
 
-<table width="100%" cellpadding="4" cellspacing="3">
+<table width="100%" cellpadding="4" cellspacing="3" class="ui celled fixed table">
 <colgroup><col>
 <col>
 <col>
