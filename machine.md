@@ -499,10 +499,11 @@ vengono espansi in parallelo; verranno quindi generate in totale
 6 regole.</p>
 </td>
 <td width="30%">
-<p><font size="2">Classi con parentesi quadre:</font></p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code></font></font></p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code></font></font></p><br>
+<p><font size="2">Classi con parentesi quadre:</font></p><br><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code></font></font></p><br><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code></font></font></p><br><br>
 <hr>
+<br>
 <p><font size="2">Classi con parentesi graffe:</font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">{012} = 0, 1, 2</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">{abc} = a, b, c</code></font></font></p><br>
@@ -639,7 +640,7 @@ palindroma.</font></p>
 </td>
 <td width="33%">
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,a,lettoa,-,&gt;)</code></font></font></p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,z,lettoz,-,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoa,a,lettoa,a,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(lettoa,b,lettoa,b,&gt;)</code></font></font></p><br>
