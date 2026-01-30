@@ -431,7 +431,7 @@ allo stato riporto1.</p>
 </tr>
 <tr valign="TOP">
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s[0..4], a..d, r[0..4], [a..d], &lt;&gt;&lt;&gt;)</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s[0..4], a..d, r[0..4], [a..d], &lt;&gt;&lt;&gt;)</code></font></font></p><br>
 <p>In questa regola si fa uso di due gruppi di classi, uno senza parentesi e uno fra
 parentesi quadre. Ciascun gruppo si espande in sequenze di
 lunghezza 4, quindi verranno prodotte complessivamente 16 regole.
@@ -455,14 +455,15 @@ regole visibili accanto.</p>
 </td>
 <td width="30%">
 <p>Classi senza parentesi:</p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge"> a..d = a, b, c, d </code></font></font></p>
-<p><font face="Courier, monospace"><font size="2">&lt;&gt;&lt;&gt; = &lt;, &gt;, &lt;, &gt;</font></font></p><br>
+<code class="language-plaintext highlighter-rouge"> a..d = a, b, c, d </code><br>
+<code class="language-plaintext highlighter-rouge"> &lt;&gt;&lt;&gt; = &lt;, &gt;, &lt;, &gt;</code><br>
+<br>
 <hr>
 <br>
 <p>Classi con parentesi quadre:</p><br>
 <code class="language-plaintext highlighter-rouge">s[0..4] = s0, s1, s2, s3, s4</code><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">r[0..4] = r0, r1, r2, r3, r4</code></font></font></p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[a..d] = a, b, c, d</code></font></font></p><br>
+<code class="language-plaintext highlighter-rouge">r[0..4] = r0, r1, r2, r3, r4</code><br>
+<code class="language-plaintext highlighter-rouge">[a..d] = a, b, c, d</code><br>
 </td>
 <td width="37%">
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s0, a, r0, a, &lt;)</code></font></font></p><br>
@@ -529,7 +530,7 @@ Mostriamo ora alcuni esempi di utilizzo dei nuovi costrutti. Per ciascun esempio
 **Odometro.** Scrivere un programma per macchina di Turing che, ricevuto sul nastro una stringa di cifre decimali, lasci sul nastro al termine dell'esecuzione la stringa di cifre corrispondente al numero iniziale, incrementato di uno. Se il risultato supera il numero di cifre inizialmente presenti, il programma deve lasciare sul nastro una stringa di soli 0 (comportamento simile a quello dei normali contachilometri).
 
 
-<table width="100%" cellpadding="4" cellspacing="3">
+<table width="100%" cellpadding="4" cellspacing="3" class="ui celled fixed table">
 <colgroup><col>
 <col>
 <col>
@@ -592,7 +593,7 @@ incrementare la cifra precedente (riporto).</font></p>
 
 **Palindrome.** Scrivere un programma per macchina di Turing che, ricevuta sul nastro una stringa sull'alfabeto a-z, lasci il nastro vuoto alla fine della computazione se e solo se la stringa originale era palindroma (si dicono palindrome le stringhe che si leggono identicamente da sinistra a destra o da destra verso sinistra, per esempio "ailatiditalia" o "satorrotas").
 
-<table width="100%" cellpadding="4" cellspacing="3">
+<table width="100%" cellpadding="4" cellspacing="3" class="ui celled fixed table">
 <colgroup><col>
 <col>
 <col>
