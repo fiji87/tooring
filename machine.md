@@ -377,20 +377,20 @@ Ciò consente di esprimere sinteticamente un grande numero di regole basate su p
 </thead>
 <tbody>
 <tr valign="TOP">
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s, [0..3], q,
 [a..d], &gt; )</code></font></font></p>
 <br>
 <p>In questo caso, le due classi racchiuse fra parentesi quadre vengono espanse in parallelo; quando il simbolo letto è 0 (primo elemento di [0..3]), il simbolo scritto sarà a (primo elemento di [a..d]), e così via.</p>
 </td>
-<td width="30%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[0..3] = 0, 1, 2,
 3</code></font></font></p>
 <br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[a..d] = a, b, c,
 d</code></font></font></p>
 </td>
-<td width="37%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(s, 0, q, a, &gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(s, 1, q, b, &gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(s, 2, q, c, &gt;)</code></font></font></p><br>
@@ -400,7 +400,7 @@ d</code></font></font></p>
 </td>
 </tr>
 <tr valign="TOP">
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s, [0..9], riporto[000000001], [1..90], &gt; )</code></font></font></p>
 <p>Questa regola mostra
 come sia possibile legare il simbolo letto, quello scritto, e il
@@ -410,13 +410,13 @@ simbolo aumentato di 1 (quindi, fra 1 e 9) e si va nello stato
 riporto0; se invece viene letto un 9, si scrive uno 0 e si passa
 allo stato riporto1.</p>
 </td>
-<td width="30%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[0..9] = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">riporto[000000001] = riporto0, riporto0, riporto0, riporto0, riporto0, riporto0, riporto0, riporto0, riporto1</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[1..90] = 1, 2,
 3, 4, 5, 6, 7, 8, 9, 0</code></font></font></p><br>
 </td>
-<td width="37%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(s, 0, riporto0, 1, &gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(s, 1, riporto0,2, &gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(s, 2, riporto0,3, &gt;)</code></font></font></p><br>
@@ -430,7 +430,7 @@ allo stato riporto1.</p>
 </td>
 </tr>
 <tr valign="TOP">
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s[0..4], a..d, r[0..4], [a..d], &lt;&gt;&lt;&gt;)</code></font></font></p><br>
 <p>In questa regola si fa uso di due gruppi di classi, uno senza parentesi e uno fra
 parentesi quadre. Ciascun gruppo si espande in sequenze di
@@ -453,7 +453,7 @@ rispettivamente, nel primo, secondo, terzo e quarto elemento
 della sequenza, rispettivamente. Il risultato finale sono le 16
 regole visibili accanto.</p>
 </td>
-<td width="30%">
+<td>
 <p>Classi senza parentesi ???? </p><br><br>
 <p markdown="1">
 
@@ -473,7 +473,7 @@ regole visibili accanto.</p>
 <code class="language-plaintext highlighter-rouge">r[0..4] = r0, r1, r2, r3, r4</code><br>
 <code class="language-plaintext highlighter-rouge">[a..d] = a, b, c, d</code><br>
 </td>
-<td width="37%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s0, a, r0, a, &lt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s0, b, r0, a, &gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s0, c, r0, a, &lt;)</code></font></font></p><br>
@@ -499,7 +499,7 @@ regole visibili accanto.</p>
 </td>
 </tr>
 <tr valign="TOP">
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_[ab], {012}, wr_[ab], {abc}, &lt;)</code></font></font></p><br><br>
 <p>Anche in questo caso
 vengono usati due gruppi di classi, quelle delimitate da [] e
@@ -507,7 +507,7 @@ quelle delimitate da {}. Come visto in precedenza, i due gruppi
 vengono espansi in parallelo; verranno quindi generate in totale
 6 regole.</p>
 </td>
-<td width="30%">
+<td>
 <p><font size="2">Classi con parentesi quadre:</font></p><br><br>
 <code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code><br>
 <code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code><br><br>
@@ -517,7 +517,7 @@ vengono espansi in parallelo; verranno quindi generate in totale
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">{012} = 0, 1, 2</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">{abc} = a, b, c</code></font></font></p><br>
 </td>
-<td width="37%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_a, 0, wr_a, a, &lt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_a, 1, wr_a, b, &lt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_a, 2, wr_a, c, &lt;)</code></font></font></p><br>
@@ -557,7 +557,7 @@ Mostriamo ora alcuni esempi di utilizzo dei nuovi costrutti. Per ciascun esempio
 </thead>
 <tbody>
 <tr valign="TOP">
-<td width="33%">
+<td>
 <p><font size="2">Dapprima (stato 0) ci si posiziona sull'ultima
 cifra a destra del numero; quindi (stato 1) si incrementa la
 cifra corrente. Se la cifra era compresa fra 0 e 8, viene fatto
@@ -565,13 +565,13 @@ l'incremento e l'esecuzione termina. Se invece la cifra corrente
 era 9, viene scritto al suo posto uno 0 e si passa a
 incrementare la cifra precedente (riporto).</font></p>
 </td>
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,[0..9],0,[0..9],&gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,-,1,-,&lt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,[0..8],FINE,[1..9],&gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(1,9,1,0,&lt;)</code></font></font></p><br>
 </td>
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,0,0,0,&gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,1,0,1,&gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,2,0,2,&gt;)</code></font></font></p><br>
@@ -620,7 +620,7 @@ incrementare la cifra precedente (riporto).</font></p>
 </thead>
 <tbody>
 <tr valign="TOP">
-<td width="33%">
+<td>
 <p><font size="2">Posizionati sul primo carattere a sinistra della
 stringa, lo cancelliamo, memorizziamo nel nome dello stato il
 carattere letto, passando nello stato <font face="Courier, monospace">lettoa</font>
@@ -639,7 +639,7 @@ consumare tutta la stringa); in caso negativo si interrompe il
 calcolo, lasciando sul nastro la parte di stringa non
 palindroma.</font></p>
 </td>
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,[a..z],letto[a..z],-,&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(letto[a..z],{a..z},letto[a..z],{a..z},&gt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(letto[a..z],-,destra[a..z],-,&lt;)</code></font></font></p>
@@ -647,7 +647,7 @@ palindroma.</font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(ritorno,[a..z],ritorno,[a..z],&lt;)</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(ritorno,-,0,-,&gt;)</code></font></font></p>
 </td>
-<td width="33%">
+<td>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,a,lettoa,-,&gt;)</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">...</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(0,z,lettoz,-,&gt;)</code></font></font></p>
