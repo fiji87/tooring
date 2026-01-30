@@ -394,8 +394,7 @@ d</code></font></font></p>
 </tr>
 <tr valign="TOP">
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s, [0..9],
-riporto[000000001], [1..90], &gt; )</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s, [0..9], riporto[000000001], [1..90], &gt; )</code></font></font></p>
 <p>Questa regola mostra
 come sia possibile legare il simbolo letto, quello scritto, e il
 nome dello stato finale tramite un'unica espansione. In questo
@@ -405,11 +404,8 @@ riporto0; se invece viene letto un 9, si scrive uno 0 e si passa
 allo stato riporto1.</p>
 </td>
 <td width="30%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[0..9] = 0, 1, 2,
-3, 4, 5, 6, 7, 8, 9</code></font></font></p><br>
-<p><font face="Courier, monospace"><font size="2"<code class="language-plaintext highlighter-rouge">riporto[000000001]
-= riporto0, riporto0, riporto0, riporto0, riporto0, riporto0,
-riporto0, riporto0, riporto1</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[0..9] = 0, 1, 2, 3, 4, 5, 6, 7, 8, 9</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">riporto[000000001] = riporto0, riporto0, riporto0, riporto0, riporto0, riporto0, riporto0, riporto0, riporto1</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[1..90] = 1, 2,
 3, 4, 5, 6, 7, 8, 9, 0</code></font></font></p><br>
 </td>
@@ -438,10 +434,8 @@ riporto0, riporto0, riporto1</code></font></font></p><br>
 </tr>
 <tr valign="TOP">
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s[0..4], a..d,
-r[0..4], [a..d], &lt;&gt;&lt;&gt;)</code></font></font></p>
-<p>In questa regola si
-fa uso di due gruppi di classi, uno senza parentesi e uno fra
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s[0..4], a..d, r[0..4], [a..d], &lt;&gt;&lt;&gt;)</code></font></font></p>
+<p>In questa regola si fa uso di due gruppi di classi, uno senza parentesi e uno fra
 parentesi quadre. Ciascun gruppo si espande in sequenze di
 lunghezza 4, quindi verranno prodotte complessivamente 16 regole.
 Anche in questo caso, le classi corrispondenti vengono espanse in
@@ -465,15 +459,15 @@ regole visibili accanto.</p>
 <td width="30%">
 <p>Classi senza
 parentesi:</p>
-<p><font face="Courier, monospace"><font size="2">a..d = a, b, c, d</font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">a..d = a, b, c, d</code></font></font></p>
 <p><font face="Courier, monospace"><font size="2">&lt;&gt;&lt;&gt;
 = &lt;, &gt;, &lt;, &gt;</font></font></p>
 <hr>
-<p>Classi con parentesi
-quadre:</p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">s[0..4] = s0, s1, s2, s3, s4</font></font></code></p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">r[0..4] = r0, r1, r2, r3, r4</font></font></code></p><br>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[a..d] = a, b, c, d</font></font></code></p><br>
+<br>
+<p>Classi con parentesi quadre:</p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">s[0..4] = s0, s1, s2, s3, s4</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">r[0..4] = r0, r1, r2, r3, r4</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">[a..d] = a, b, c, d</code></font></font></p><br>
 </td>
 <td width="37%">
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">( s0, a, r0, a, &lt;)</code></font></font></p><br>
@@ -502,8 +496,7 @@ quadre:</p>
 </tr>
 <tr valign="TOP">
 <td width="33%">
-<p><font face="Courier, monospace"><font size="2">(rd_[ab], {012},
-wr_[ab], {abc}, &lt;)</font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">(rd_[ab], {012}, wr_[ab], {abc}, &lt;)</code></font></font></p>
 <p>Anche in questo caso
 vengono usati due gruppi di classi, quelle delimitate da [] e
 quelle delimitate da {}. Come visto in precedenza, i due gruppi
@@ -512,10 +505,10 @@ vengono espansi in parallelo; verranno quindi generate in totale
 </td>
 <td width="30%">
 <p><font size="2">Classi con parentesi quadre:</font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code></font></font></p>
-<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code></font></font></p>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">rd_[ab] = rd_a, rd_b</code></font></font></p><br>
+<p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">wr_[ab] = wr_a, wr_b</code></font></font></p><br>
 <hr>
-<p><font size="2">Classi con parentesi graffe:</font></p>
+<p><font size="2">Classi con parentesi graffe:</font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">{012} = 0, 1, 2</code></font></font></p><br>
 <p><font face="Courier, monospace"><font size="2"><code class="language-plaintext highlighter-rouge">{abc} = a, b, c</code></font></font></p><br>
 </td>
@@ -678,6 +671,8 @@ palindroma.</font></p>
 </tr>
 </tbody>
 </table>
+
+
 
 ## Simulatore di macchine di Turing
 
