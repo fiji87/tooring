@@ -443,7 +443,7 @@ ovvero *k-h*.
 <h3 class="edition" id="edition19">Edizione 19</h3>
 <p class="year">2015</p>
 
-<div class="ui bottom attached active tab segment" data-tab="classifica20" markdown="1">
+<div class="ui bottom attached active tab segment" data-tab="classifica19" markdown="1">
 
 | Partecipanti | Liceo | |
 | --- | --- | --- |
