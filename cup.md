@@ -442,6 +442,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 19</h3>
 <p class="year">2015</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica19">Graduatoria</a>
+  <a class="item" data-tab="testo19">Testo</a>
+</div>
 
 <div class="ui bottom attached active tab segment" data-tab="classifica19" markdown="1">
 
@@ -471,6 +475,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 18</h3>
 <p class="year">2014</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica18">Graduatoria</a>
+  <a class="item" data-tab="testo18">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica18" markdown="1">
 
 
@@ -502,6 +510,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 17</h3>
 <p class="year">2013</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica17">Graduatoria</a>
+  <a class="item" data-tab="testo17">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica17" markdown="1">
 
 
@@ -533,6 +545,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 16</h3>
 <p class="year">2012</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica16">Graduatoria</a>
+  <a class="item" data-tab="testo16">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica16" markdown="1">
 
 
@@ -565,6 +581,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 15</h3>
 <p class="year">2011</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica15">Graduatoria</a>
+  <a class="item" data-tab="testo15">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica15" markdown="1">
 
 
@@ -597,6 +617,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 14</h3>
 <p class="year">2010</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica14">Graduatoria</a>
+  <a class="item" data-tab="testo14">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica14" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -627,6 +651,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 13</h3>
 <p class="year">2009</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica13">Graduatoria</a>
+  <a class="item" data-tab="testo13">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica13" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -656,6 +684,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 12</h3>
 <p class="year">2008</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica12">Graduatoria</a>
+  <a class="item" data-tab="testo12">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica12" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -687,6 +719,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 11</h3>
 <p class="year">2007</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica11">Graduatoria</a>
+  <a class="item" data-tab="testo11">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica11" markdown="1">
 
 
@@ -719,6 +755,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 10</h3>
 <p class="year">2006</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica10">Graduatoria</a>
+  <a class="item" data-tab="testo10">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica10" markdown="1">
 
 
@@ -751,6 +791,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 9</h3>
 <p class="year">2005</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica9">Graduatoria</a>
+  <a class="item" data-tab="testo9">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica9" markdown="1">
 
 
@@ -776,6 +820,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 8</h3>
 <p class="year">2004</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica8">Graduatoria</a>
+  <a class="item" data-tab="testo8">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica8" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -806,6 +854,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 7</h3>
 <p class="year">2003</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica7">Graduatoria</a>
+  <a class="item" data-tab="testo7">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica7" markdown="1">
 
 
@@ -837,6 +889,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 6</h3>
 <p class="year">2002</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica6">Graduatoria</a>
+  <a class="item" data-tab="testo6">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica6" markdown="1">
 
 
@@ -868,6 +924,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 5</h3>
 <p class="year">2001</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica5">Graduatoria</a>
+  <a class="item" data-tab="testo5">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica5" markdown="1">
 
 
@@ -899,6 +959,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 4</h3>
 <p class="year">2001</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica4">Graduatoria</a>
+  <a class="item" data-tab="testo4">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica4" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -928,6 +992,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 3</h3>
 <p class="year">1999</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica3">Graduatoria</a>
+  <a class="item" data-tab="testo3">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica3" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -958,6 +1026,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 2</h3>
 <p class="year">1998</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica2">Graduatoria</a>
+  <a class="item" data-tab="testo2">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica2" markdown="1">
 
 | Partecipanti | Liceo | |
@@ -983,6 +1055,10 @@ ovvero *k-h*.
 
 <h3 class="edition" id="edition19">Edizione 1</h3>
 <p class="year">1997</p>
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica1">Graduatoria</a>
+  <a class="item" data-tab="testo1">Testo</a>
+</div>
 <div class="ui bottom attached active tab segment" data-tab="classifica1" markdown="1">
 
 | Partecipanti | Liceo | |
