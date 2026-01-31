@@ -457,9 +457,7 @@ regole visibili accanto.</p>
 <p>Classi senza parentesi ???? </p><br><br>
 <p markdown="1">
 
-
 `a..d = a, b, c, d`
-
 
 <br>
 <code class="language-plaintext highlighter-rouge"> a..d = a, b, c, d </code><br>
