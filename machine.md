@@ -454,7 +454,7 @@ della sequenza, rispettivamente. Il risultato finale sono le 16
 regole visibili accanto.</p>
 </td>
 <td>
-<p>Classi senza parentesi ???? </p><br><br>
+<p>Classi senza parentesi </p><br><br>
 <p markdown="1">
 
 `a..d = a, b, c, d`
