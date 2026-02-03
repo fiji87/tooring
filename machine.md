@@ -303,7 +303,7 @@ allora la MdT si ferma e termina la sua computazione.
   </div>
 </div>
 
-### Funzioni avanzate
+## Funzioni avanzate
 
 Il Simulatore usato negli anni precedenti includeva già una forma di *abbreviazione sintattica*, consistente nel specificare una sequenza di caratteri anziché un carattere singolo nei campi della quintupla che indicano il carattere letto da nastro e quello scritto su nastro. Tale abbreviazione veniva poi espansa in un numero di regole pari alla lunghezza della sequenza di caratteri, come nell'esempio seguente:
 
