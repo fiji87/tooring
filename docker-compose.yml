@@ -1,0 +1,16 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:latest
+    user: root
+    volumes:
+      - .:/srv/jekyll
+    ports:
+      - "4000:4000"
+    environment:
+      - JEKYLL_UID=1000
+      - JEKYLL_GID=1000
+    # This ensures gems are installed before trying to serve
+    command: >
+          sh -c "bundle config set --local force_ruby_platform true && 
+                bundle install && 
+                bundle exec jekyll serve --livereload --force_polling --host 0.0.0.0 --trace"
