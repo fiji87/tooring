@@ -59,12 +59,49 @@ Istruzioni sulla pagina dedicata all'edizione corrente.
 
 La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galilei, che forniscono 10 immatricolazioni gratuite a qualunque corso di studio dell'Università (delibera n.135/6 del Consiglio di Amministrazione, 6 Aprile 2004), supporto organizzativo, e buoni premio per acquisto di materiale didattico per gli studenti e le scuole.
 
-<div class="ui tiny images">
-  <img class="ui image" src="assets/images/rotary.png">
-  <img class="ui image" src="https://cdn.jsdelivr.net/gh/msetzu/marpee@latest/assets/imgs/logos/unipi/SVG/cherubino_only.svg">
+<div class="ui small images">
+  <img class="ui image" src="https://cdn.jsdelivr.net/gh/msetzu/marpee@latest/assets/imgs/logos/unipi/SVG/marchio_unipi_orizz_black.eps.svg">
+  <img class="ui image" src="https://cdn.jsdelivr.net/gh/msetzu/marpee@latest/assets/imgs/logos/rotary/SVG/blue.svg">
 </div>
 
 ## Past editions
+
+<h3 class="edition" id="edition26">Edizione 29</h3>
+<p class="year">2026</p>
+
+<div class="ui top attached tabular menu">
+  <a class="active item" data-tab="classifica29">Graduatoria</a>
+  <a class="item" data-tab="testo29">Testo</a>
+</div>
+<div class="ui bottom attached active tab segment" data-tab="classifica29" markdown="1">
+
+
+| Partecipanti | Istituzione | |
+| --- | --- | --- |
+| Federico Micheletti & Aki Perna         | Liceo Scientifico "Ulisse Dini"   | Pisa      |
+| Andrea Massetani & Margherita Lastrucci | ITS "Tullio Buzzi"                | Prato     |
+| Mattia Trevisani & Edoardo Forsi        | ITI "G.Marconi"                   | Pontedera |
+| Francesco Nagni & Gabriele Germani      | Liceo Scientifico "Vito Volterra" | Ciampino  |
+| Shiqi Shen & Oscar Xiang                | ITS "Tullio Buzzi"                | Prato     |
+| Andrea Bonacci & Giovanni Pacchiani     | ITIS "G. Galilei"                 | Livorno   |
+| Paolo Donati & Nicolò Lenzini           | ITI "G. Marconi"                  | Pontedera |
+| Matteo Righetti & Luca Govoni           | Liceo Scientifico N. Copernico    | Bologna   |
+| Niccolò Campegiani & Beatrice Losardo   | Liceo Scientifico "Vito Volterra" | Ciampino  |
+| Federico Boiani & Iacopo Teodori        | ITIS "E. Mattei" Urbino           | Urbino    |
+
+</div>
+<div class="ui bottom attached tab segment" data-tab="testo29">
+  <embed
+    src="assets/cup/texts/29.pdf"
+    type="application/pdf"
+    width="90%"
+    height="800%"
+    title="Testo"
+  />
+</div>
+
+
+<!-- edition -->
 
 <h3 class="edition" id="edition26">Edizione 28</h3>
 <p class="year">2025</p>
@@ -78,7 +115,7 @@ La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
 
 | Partecipanti | Istituzione | |
 | --- | --- | --- |
-| Leonardo Giovanni Selbach, Leonardo Zeppieri | Liceo Scientifico "Vito Volterra" - Volterra 2 | Volterra |
+| Leonardo Giovanni Selbach, Leonardo Zeppieri | Liceo Scientifico "Vito Volterra" - Volterra 2 | Ciampino |
 | Giulio Mannari & Dario Mariani | Liceo Scientifico “Ulisse Dini” - Dini 1 | Pisa |
 | Samuele Nigro & Giovanni Pierri | ITS “Tullio Buzzi” - Buzzi 1 | Prato |
 | Elisa Bilotta & Daniele Tiburzi | Liceo Scientifico e Linguistico Paolo Giovio - Giovio 1   | Como |
@@ -100,6 +137,9 @@ La Cup è sponsorizzata dall'Università di Pisa e dal Rotary Club Pisa - Galile
     title="Testo"
   />
 </div>
+
+
+<!-- edition -->
 
 <h3 class="edition" id="edition26">Edizione 27</h3>
 <p class="year">2024</p>

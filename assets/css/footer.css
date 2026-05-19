@@ -6,3 +6,9 @@ footer hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
+
+footer .images.grid.valign .column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
